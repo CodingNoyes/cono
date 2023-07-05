@@ -13,6 +13,10 @@
 /** 'Noto Sans KR' **/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
+/**  scrollbar 제거  **/
+body::-webkit-scrollbar {
+  display: none;
+}
 /** scrollDown-arrow **/
 .scrollDown-arrow {
   width: 95%;
