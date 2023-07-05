@@ -1,43 +1,321 @@
 @charset "utf-8";
 
+@import url(../common.css);
+
 /**** 공통 ****/
-html,
+/* html,
 body {
+  width: 100%;
+} */
+
+.contents {
   width: 100%;
 }
 
 /**** nav ****/
-nav {
+.canon-wrapper {
+  font-family: var(--en-font);
+  width: 100%;
+  height: 50px;
   position: fixed;
+  top: 0;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* nav canon-icon */
 nav .canon-icon {
+  background: url(../images/logo-small.png) no-repeat 50% / cover;
+  width: 164px;
+  height: 44px;
+  margin: 5px 0 0 40px;
 }
 
 /* nav canon-icon ul */
 nav ul {
-  color: #fff;
+  width: 100%;
+  color: var(--gray-color2);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  gap: 100px;
+  margin-right: 70px;
+  text-transform: uppercase;
 }
+
+
 
 /**** contents ****/
 
 /* contents bestModel-banner */
-.contents .bestModel-banner .bestModel-background {
-  background: url(../../images/bestModel-banner.png) no-repeat 50% / cover;
+.contents .bestModel-banner {
+  background: url(../images/bestModel-banner.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.contents .bestModel-banner .bestModel-banner-text {
+  color: var(--gray-color2);
+  width: 90%;
+  margin: 0 auto;
+}
+.contents .bestModel-banner .bestModel-banner-text h1 {
+  font-family: var(--kr-font);
+  font-size: 2.5rem;
+}
+.contents .bestModel-banner .bestModel-banner-text h2 {
+  width: 30%;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.contents .bestModel-banner .view-more {
+  margin-top: 20px;
+}
+
+
+/* contents bestModel-txt */
+.contents .bestModel-txt {
+  background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
 }
-/* contents bestModel-txt */
+
+.contents .bestModel-txt .scrollDown-arrow {
+  padding-top: 50px;
+
+}
+
+.contents .bestModel-txt h1 {
+  font-family: var(--kr-font);
+  color: var(--gray-color2);
+  font-size: 4.375rem;
+  width: 100%;
+  height: 90vh;
+  letter-spacing: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* contents bestModel-new */
+.contents .bestModel-new {
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.contents .bestModel-new .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.contents .bestModel-new .bestModel-new-text {
+  color: var(--gray-color2);
+  text-transform: capitalize;
+  font-size: 3.75rem;
+  width: 100%;
+}
+
+.contents .bestModel-new .bestModel-new-model-img {
+  background: url(../images/main-bestModel1.png) no-repeat 50% / cover;
+  width: 924px;
+  height: 870px;
+  display: grid;
+  place-items: center;
+}
+
+.contents .bestModel-new .bestModel-new-model-img .bestModel-new-explain h1 {
+  color: var(--gray-color2);
+  font-size: 1.875rem;
+}
+
+.contents .bestModel-new .bestModel-new-model-img .bestModel-new-model-bgtxt h2 {
+  color: var(--gray-color2);
+  font-size: 12.5rem;
+  display: grid;
+  place-items: center;
+}
+
 /* contents bestModel-youtube */
+.contents .bestModel-youtube .bestModel-youtube-slide h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 8rem;
+  width: 100%;
+}
+
+.contents .bestModel-youtube {
+  background-color: var(--black-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.contents .bestModel-youtube .canon-youtube {
+  /* width: 100%;
+  height: 100%; */
+}
+
+
 /* contents bestModel-category */
+.bestModel-category {
+  background-color: var(--black-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.bestModel-category h1 {
+  color: var(--gray-color2);
+  font-size: 1.875rem;
+}
+
+.bestModel-category .bestModel-category-item {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 50px;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item1 {
+  background: url(../images/categori-렌즈교환카메라.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item1 .bestModel-category-item1-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item1 .bestModel-category-item1-txt h3 {
+  color: #fff;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item2 {
+  background: url(../images/categori-렌즈.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item2 .bestModel-category-item2-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item2 .bestModel-category-item2-txt h3 {
+  color: #fff;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item3 {
+  background: url(../images/categori-프린터.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item3 .bestModel-category-item3-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item3 .bestModel-category-item3-txt h3 {
+  color: #fff;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item4 {
+  background: url(../images/categori-컴팩트카메라.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item4 .bestModel-category-item4-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item4 .bestModel-category-item4-txt h3 {
+  color: #fff;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item5 {
+  background: url(../images/categori-wearable-camera.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item5 .bestModel-category-item5-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item5 .bestModel-category-item5-txt h3 {
+  color: #fff;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item6 {
+  background: url(../images/categori-쌍안경.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item6 .bestModel-category-item6-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestModel-category .bestModel-category-item .bestModel-category-item6 .bestModel-category-item6-txt h3 {
+  color: #fff;
+}
+
+
+
 /* contents bestModel-notice */
+.contents .bestModel-notice {
+  background-color: var(--black-color);
+  width: 100%;
+  height: 100vh;
+}
+
 
 /* footer */
