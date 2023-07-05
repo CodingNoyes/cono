@@ -1,6 +1,138 @@
 @charset "utf-8";
 
-/***** event-txt *****/
+/**** contents ****/
+.contents {
+  width: 100%;
+}
+
+/* event-banner */
+.event-banner {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/event-banner.png) no-repeat 50% / cover;
+  display: flex;
+  align-items: center;
+}
+
+.event-banner .banner-txt {
+  width: 90%;
+  margin: 0 auto;
+  color: var(--gray-color2);
+}
+
+.event-banner .banner-txt h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.event-banner .banner-txt h2 {
+  width: 30%;
+}
+
+/** event-txt **/
 .contents .event-txt {
   width: 100%;
+  height: 100vh;
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+}
+
+.contents .event-txt .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.contents .event-txt h3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--gray-color2);
+}
+
+/** event-scrollDown **/
+.event-scrollDown {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+  position: relative;
+}
+
+.event-scrollDown .canon-self-studio {
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: url(../images/event-scrollDown.png) no-repeat 50% / cover;
+
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.event-scrollDown p {
+  color: var(--gray-color2);
+  position: absolute;
+  bottom: 150px;
+  right: 20vw;
+}
+
+/** event-3block **/
+
+.event-3block {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color);
+  color: #fff;
+}
+.event-3block h2 {
+  padding-top: 60px;
+}
+
+.event-3block h2 strong {
+  display: block;
+}
+.event-3block .event-3block-img {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.event-3block .event-3block-img img {
+  width: 25vw;
+  height: 60vh;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.event-3block .event-3block-img img:hover {
+  transform: translateY(-10px);
+}
+
+/** event-youtube **/
+.event-youtube {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color);
+}
+
+.event-youtube iframe {
+  width: 100%;
+  height: 40vw;
+  margin: 0 auto;
+}
+
+footer {
+  height: 100vh;
+  background-color: #ddd;
 }
