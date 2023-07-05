@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* root */
+/**** root ****/
 :root {
   --kr-font: 'Noto Sans KR'; /*폰트css 파일 정리 후 수정 예정*/
   --en-font: 'Neue Montreal'; /*폰트css 파일 정리 후 수정 예정*/
@@ -9,7 +9,7 @@
   --gray-color2: #d9d9d9;
 }
 
-/**** scrollDown-arrow *****/
+/** scrollDown-arrow **/
 .scrollDown-arrow {
   width: 95%;
   display: flex;
@@ -21,8 +21,8 @@
 }
 
 .scrollDown-arrow svg {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   fill: var(--gray-color);
 }
 
@@ -35,4 +35,23 @@
   line-height: 30px;
   border: 1px solid var(--gray-color);
   border-radius: 15px;
+}
+
+/** view more **/
+.view-more {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #fff;
+  color: var(--gray-color);
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.view-more:hover {
+  color: var(--red-color);
+  transform: scale(1.1);
 }
