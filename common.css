@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* root */
 :root {
   --kr-font: 'Noto Sans KR'; /*폰트css 파일 정리 후 수정 예정*/
@@ -8,4 +7,32 @@
   --black-color: #070608;
   --gray-color: #6a6a6a;
   --gray-color2: #d9d9d9;
+}
+
+/**** scrollDown-arrow *****/
+.scrollDown-arrow {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 0 auto;
+  color: var(--gray-color);
+}
+
+.scrollDown-arrow svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--gray-color);
+}
+
+.scrollDown-arrow p {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid var(--gray-color);
+  border-radius: 15px;
 }
