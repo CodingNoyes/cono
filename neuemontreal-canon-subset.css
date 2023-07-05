@@ -1,0 +1,23 @@
+/* Regular */
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url(./NeueMontreal-Regular.woff2) format('woff2');
+}
+
+/* Light */
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url(./NeueMontreal-Light.woff2) format('woff2');
+}
+
+/* Medium */
+@font-face {
+  font-family: 'NeueMontreal-Medium';
+  src: url(./NeueMontreal-Medium.woff2) format('woff2');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url(./NeueMontreal-Bold.woff2) format('woff2');
+}
