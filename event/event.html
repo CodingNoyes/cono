@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../common/minireset.min.css">
 
   <!-- font css -->
-  <link rel="stylesheet" href="../neuemontreal-canon-subset.css">
+  <link rel="stylesheet" href="../en-font.css">
 
   <!-- 공통 css -->
   <link rel="stylesheet" href="../common.css">
@@ -44,7 +44,6 @@
         <li><a href="#">EVENT</a></li>
       </ul>
     </nav>
-    <a href="#" class="side-btn">Canon</a>
     <a href="#" class="bottom-btn">HIRE</a>
   </header>
 
@@ -112,7 +111,7 @@
     <!-- event-youtube -->
     <div class="event-youtube event">
       <iframe width="560" height="315" class="youtube"
-        src="https://www.youtube.com/embed/y3XWDfmlCJo?controls=0&loop=1&autoplay=1&mute=1&modestbranding=1"
+        src="https://www.youtube.com/embed/y3XWDfmlCJo?controls=0&loop=1&autoplay=1&amp;playlist=y3XWDfmlCJo&amp;loop=0 &mute=1&modestbranding=1"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
@@ -125,6 +124,12 @@
     <!-- event-location -->
     <div class="event-location event">
       <h1>location</h1>
+
+      <div class="event-map">
+        <div id="daumRoughmapContainer1688613354408" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      </div>
+
+      <p>※ 본 이벤트는 캐논 강남점에서만 실행되고 있습니다.</p>
     </div>
 
     <!-- footer -->
@@ -135,6 +140,18 @@
     </footer>
   </div>
 
+
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp": "1688613354408",
+      "key": "2ff8k",
+      "mapWidth": "1200",
+      "mapHeight": "600"
+    }).render();
+  </script>
 </body>
 
 </html>
