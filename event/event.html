@@ -22,12 +22,19 @@
   <!-- 공통 css -->
   <link rel="stylesheet" href="../common.css">
 
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../common/swiper-bundle.min.css">
+
   <!-- 내가 작성한 css -->
   <link rel="stylesheet" href="./event.css">
+  <!-- 내가 작성한 swiper css -->
+  <link rel="stylesheet" href="event-swiper.css">
 
 
   <!-- jQuery -->
   <script src="../common/jquery-3.7.0.min.js"></script>
+  <!-- swiper -->
+  <script src="../common/swiper-bundle.min.js"></script>
   <!-- 내가 작성한 script -->
   <script defer src="./event.js"></script>
 </head>
@@ -52,11 +59,31 @@
 
     <!-- event-banner -->
     <div class="event-banner event">
-      <div class="banner-txt">
-        <div class="view-more">
-          view more
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg1">1
+            <div class="view-more">
+              view more
+            </div>
+          </div>
+
+          <div class="swiper-slide bg2">2
+            <div class="view-more">
+              view more
+            </div>
+          </div>
+          <div class="swiper-slide bg3">3
+            <div class="view-more">
+              view more
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
+
     </div>
 
     <!-- event-txt -->
@@ -137,10 +164,10 @@
   </div>
 
 
-  <script charset="UTF-8" class="daum_roughmap_loader_script"
-    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
+  </script>
 
-  <script charset="UTF-8">
+  <script>
     new daum.roughmap.Lander({
       "timestamp": "1688613354408",
       "key": "2ff8k",
