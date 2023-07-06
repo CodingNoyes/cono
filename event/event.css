@@ -8,13 +8,14 @@ header {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
 }
 header .nav-logo {
   width: 80%;
   display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 header nav .gnb {
   display: flex;
@@ -75,31 +76,18 @@ header .bottom-btn {
 .event-banner {
   width: 100%;
   height: 100vh;
-  background: url(../images/event-banner.png) no-repeat 50% / cover;
+  background: url(../images/event-banner1.png) no-repeat 50% / cover;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.event-banner .banner-txt {
-  width: 80%;
-  margin: 0 auto;
-  color: var(--gray-color2);
-}
-
-.event-banner .banner-txt h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-weight: 500;
-}
-
-.event-banner .banner-txt p {
-  font-family: var(--en-font);
-  font-weight: 200;
-  font-size: 1.25rem;
-}
 .event-banner .view-more {
-  margin: 20px 0;
+  margin: 60px 0;
   cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 13%;
 }
 
 /** event-txt **/
