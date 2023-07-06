@@ -1,6 +1,6 @@
 /* Regular */
 @font-face {
-  font-family: 'NeueMontreal-Regular';
+  font-family: 'NeueMontreal';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'NeueMontreal';
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   font-display: swap;
   src: url(./NeueMontreal-Light.woff2) format('woff2');
 }
