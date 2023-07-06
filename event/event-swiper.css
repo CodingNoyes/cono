@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+.mySwiper1 {
+  background-color: #979797;
+  height: 100vh;
+  overflow: hidden;
+
+  --swiper-theme-color: #fff;
+  --swiper-navigation-size: 2rem;
+}
+
+.mySwiper1 .swiper-slide {
+  background: no-repeat 50% / cover;
+}
+
+.mySwiper1 .bg1 {
+  background-image: url(../images/event-banner1.png);
+}
+
+.mySwiper1 .bg2 {
+  background-image: url(../images/event-banner2.png);
+}
+
+.mySwiper1 .bg3 {
+  background-image: url(../images/event-banner3.png);
+}
+
+.mySwiper1 .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after {
+  position: absolute;
+  left: 50px;
+}
+
+.swiper-button-next::after {
+  position: absolute;
+  right: 50px;
+}
