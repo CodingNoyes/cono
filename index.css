@@ -50,12 +50,13 @@ header nav .gnb li:first-child {
     margin-right: 50%;
 }
 header .side-btn {
+    display: grid;
+    align-items: center;
     width: 80px;
     height: 40px;
     background-color: #fff;
     color: #070608;
     text-align: center;
-    line-height: 40px;
     position: fixed;
     right: -1%;
     top: 20%;
@@ -74,6 +75,7 @@ header .bottom-btn {
     position: fixed;
     bottom: 20px;
     right: 30px;
+    font-family: var(--en-font);
 }
 /**** main ****/
 /* main-home */
@@ -99,6 +101,8 @@ header .bottom-btn {
     font-size: 2.5rem;
     text-align: center;
     text-indent: -25px;
+    font-family: var(--en-font);
+    
 }
 .main-home .main-home-right-box {
     width: 33.3333%;
