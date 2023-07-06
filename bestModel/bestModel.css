@@ -51,30 +51,45 @@ nav ul {
 /**** contents ****/
 
 /* contents bestModel-banner */
-.contents .bestModel-banner {
-  background: url(../images/bestModel-banner.png) no-repeat 50% / cover;
+.contents .bestModel-banner1 {
+  background: url(../images/bestModel-banner1.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
-.contents .bestModel-banner .bestModel-banner-text {
-  color: var(--gray-color2);
-  width: 90%;
-  margin: 0 auto;
+.contents .bestModel-banner1 .view-more {
+  position: absolute;
+  top: 580px;
+  left: 200px;
 }
-.contents .bestModel-banner .bestModel-banner-text h1 {
-  font-family: var(--kr-font);
-  font-size: 2.5rem;
+
+.contents .bestModel-banner2 {
+  background: url(../images/bestModel-banner2.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: none;
 }
-.contents .bestModel-banner .bestModel-banner-text h2 {
-  width: 30%;
-  font-size: 5rem;
-  text-transform: uppercase;
+
+.contents .bestModel-banner2 .view-more {
+  position: absolute;
+  top: 580px;
+  left: 200px;
 }
-.contents .bestModel-banner .view-more {
-  margin-top: 20px;
+
+.contents .bestModel-banner3 {
+  background: url(../images/bestModel-banne3.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: none;
+}
+
+.contents .bestModel-banner3 .view-more {
+  position: absolute;
+  top: 580px;
+  left: 200px;
 }
 
 /* contents bestModel-txt */
@@ -101,7 +116,8 @@ nav ul {
 }
 
 /* contents bestModel-new */
-.contents .bestModel-new {
+/* contents bestModel-new 1 */
+.contents .bestModel-new1 {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
@@ -109,11 +125,11 @@ nav ul {
   position: relative;
 }
 
-.contents .bestModel-new .scrollDown-arrow {
+.contents .bestModel-new1 .scrollDown-arrow {
   padding-top: 50px;
 }
 
-.contents .bestModel-new .bestModel-new-text {
+.contents .bestModel-new1 .bestModel-new1-text {
   font-family: 'NeueMontreal';
   font-weight: 400;
   color: var(--gray-color2);
@@ -125,7 +141,7 @@ nav ul {
   text-align: left;
 }
 
-.contents .bestModel-new .bestModel-new-explain h1 {
+.contents .bestModel-new1 .bestModel-new1-explain h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 1.875rem;
@@ -135,26 +151,26 @@ nav ul {
   left: 830px;
 }
 
-.contents .bestModel-new img {
-  width: 630px;
+.contents .bestModel-new1 img {
+  width: 650px;
   height: 630px;
   position: absolute;
   top: 250px;
   right: 580px;
 }
 
-.contents .bestModel-new h2 {
+.contents .bestModel-new1 h2 {
   color: var(--gray-color2);
   text-transform: uppercase;
   font-size: 12.5rem;
   font-weight: bold;
   position: absolute;
-  top: 390px;
-  left: 550px;
+  top: 200px;
+  left: 530px;
   margin-top: 10%;
 }
 
-.contents .bestModel-new .bestModel-new-model-name {
+.contents .bestModel-new1 .bestModel-new1-model-name {
   color: var(--gray-color2);
   position: absolute;
   width: 200px;
@@ -163,7 +179,217 @@ nav ul {
   line-height: 2.1;
 }
 
-.contents .bestModel-new .bestModel-new-model-name a {
+.contents .bestModel-new1 .bestModel-new1-model-name a {
+  border: 1px solid var(--gray-color2);
+  border-radius: 30px;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+/* contents bestModel-new 2 */
+.contents .bestModel-new2 {
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.contents .bestModel-new2 .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.contents .bestModel-new2 .bestModel-new2-text {
+  font-family: 'NeueMontreal';
+  font-weight: 400;
+  color: var(--gray-color2);
+  text-transform: capitalize;
+  font-size: 3.75rem;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-align: left;
+}
+
+.contents .bestModel-new2 .bestModel-new2-explain h1 {
+  font-family: var(--kr-font);
+  color: var(--gray-color2);
+  font-size: 1.875rem;
+  font-weight: 400;
+  position: absolute;
+  top: 180px;
+  left: 830px;
+}
+
+.contents .bestModel-new2 img {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 120px;
+  right: 390px;
+}
+
+.contents .bestModel-new2 h2 {
+  color: var(--gray-color2);
+  text-transform: uppercase;
+  font-size: 12.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 550px;
+  margin-top: 10%;
+}
+
+.contents .bestModel-new2 .bestModel-new2-model-name {
+  color: var(--gray-color2);
+  position: absolute;
+  width: 200px;
+  bottom: 60px;
+  right: 20px;
+  line-height: 2.1;
+}
+
+.contents .bestModel-new2 .bestModel-new2-model-name a {
+  border: 1px solid var(--gray-color2);
+  border-radius: 30px;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+/* contents bestModel-new 3 */
+.contents .bestModel-new3 {
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.contents .bestModel-new3 .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.contents .bestModel-new3 .bestModel-new3-text {
+  font-family: 'NeueMontreal';
+  font-weight: 400;
+  color: var(--gray-color2);
+  text-transform: capitalize;
+  font-size: 3.75rem;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-align: left;
+}
+
+.contents .bestModel-new3 .bestModel-new3-explain h1 {
+  font-family: var(--kr-font);
+  color: var(--gray-color2);
+  font-size: 1.875rem;
+  font-weight: 400;
+  position: absolute;
+  top: 180px;
+  left: 830px;
+}
+
+.contents .bestModel-new3 img {
+  width: 630px;
+  height: 630px;
+  position: absolute;
+  top: 250px;
+  right: 590px;
+}
+
+.contents .bestModel-new3 h2 {
+  color: var(--gray-color2);
+  text-transform: uppercase;
+  font-size: 12.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 530px;
+  margin-top: 10%;
+}
+
+.contents .bestModel-new3 .bestModel-new3-model-name {
+  color: var(--gray-color2);
+  position: absolute;
+  width: 200px;
+  bottom: 60px;
+  right: 20px;
+  line-height: 2.1;
+}
+
+.contents .bestModel-new3 .bestModel-new3-model-name a {
+  border: 1px solid var(--gray-color2);
+  border-radius: 30px;
+  padding: 5px 10px;
+  text-align: right;
+}
+
+/* contents bestModel-new 4 */
+.contents .bestModel-new4 {
+  background: url(../images/main-background.png) no-repeat 50% / cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.contents .bestModel-new4 .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.contents .bestModel-new4 .bestModel-new4-text {
+  font-family: 'NeueMontreal';
+  font-weight: 400;
+  color: var(--gray-color2);
+  text-transform: capitalize;
+  font-size: 3.75rem;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-align: left;
+}
+
+.contents .bestModel-new4 .bestModel-new4-explain h1 {
+  font-family: var(--kr-font);
+  color: var(--gray-color2);
+  font-size: 1.875rem;
+  font-weight: 400;
+  position: absolute;
+  top: 180px;
+  left: 830px;
+}
+
+.contents .bestModel-new4 img {
+  width: 630px;
+  height: 630px;
+  position: absolute;
+  top: 250px;
+  right: 590px;
+}
+
+.contents .bestModel-new4 h2 {
+  color: var(--gray-color2);
+  text-transform: uppercase;
+  font-size: 12.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 200px;
+  left: 530px;
+  margin-top: 10%;
+}
+
+.contents .bestModel-new4 .bestModel-new4-model-name {
+  color: var(--gray-color2);
+  position: absolute;
+  width: 200px;
+  bottom: 60px;
+  right: 20px;
+  line-height: 2.1;
+}
+
+.contents .bestModel-new4 .bestModel-new4-model-name a {
   border: 1px solid var(--gray-color2);
   border-radius: 30px;
   padding: 5px 10px;
@@ -175,8 +401,13 @@ nav ul {
   background-color: #000;
   width: 100%;
   height: 100vh;
-  display: grid;
-  place-items: center;
+  /* display: grid;
+  place-items: center; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .contents .bestModel-youtube .bestModel-youtube-slide h1 {
