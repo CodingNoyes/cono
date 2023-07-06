@@ -105,6 +105,8 @@ nav ul {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
+  text-align: center;
+  position: relative;
 }
 
 .contents .bestModel-new .scrollDown-arrow {
@@ -115,7 +117,7 @@ nav ul {
   color: var(--gray-color2);
   text-transform: capitalize;
   font-size: 3.75rem;
-  width: 100%;
+  text-align: left;
 }
 
 .contents .bestModel-new .bestModel-new-explain h1 {
@@ -123,29 +125,23 @@ nav ul {
   font-size: 1.875rem;
 }
 
-.contents .bestModel-new .bestModel-new-model-img {
-  /* background: url(../images/main-bestModel1.png) no-repeat 50% / cover; */
-  width: 100%;
-  height: 100%;
-  /* position: relative; */
+.contents .bestModel-new img {
+  width: 630px;
+  height: 630px;
+  position: absolute;
+  right: 600px;
 }
 
-.contents .bestModel-new .bestModel-new-model-img img {
-  width: 700px;
-  height: 700px;
-}
-
-.contents .bestModel-new .bestModel-new-model-img h2 {
+.contents .bestModel-new h2 {
   color: var(--gray-color2);
   font-size: 12.5rem;
-  width: 1000px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
+  font-weight: bold;
+  margin-top: 10%;
 }
 
 .contents .bestModel-new .bestModel-new-model-name {
   color: var(--gray-color2);
+  text-align: right;
 }
 
 /* contents bestModel-youtube */
