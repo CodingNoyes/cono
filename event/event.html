@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../common/minireset.min.css">
 
   <!-- font css -->
-  <link rel="stylesheet" href="../neuemontreal-canon-subset.css">
+  <link rel="stylesheet" href="../en-font.css">
 
   <!-- 공통 css -->
   <link rel="stylesheet" href="../common.css">
@@ -34,17 +34,28 @@
 
 <body>
   <!-- nav -->
-
+  <header>
+    <nav>
+      <ul class="gnb">
+        <li><a href="#"><img src="../images/logo-small.png" alt="캐논 작은 사이즈의 로고입니다."></a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">BRANDING</a></li>
+        <li><a href="#">BEST MODEL</a></li>
+        <li><a href="#">EVENT</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="bottom-btn">HIRE</a>
+  </header>
 
   <!-- contents -->
   <div class="contents">
 
     <!-- event-banner -->
-    <div class="event-banner">
+    <div class="event-banner event">
       <div class="banner-txt">
         <p>canon self studio</p>
         <h1>캐논 셀프 스튜디오</h1>
-        <h2>캐논 풀 프레임 미러리스 카메라 EOD R5 RF 렌즈를 이용해 감성 있는 셀프 사진을 찍어 추억을 남겨보세요.</h2>
+        <h2>캐논 풀 프레임 미러리스 카메라 EOD R5 RF 렌즈를 이용해<br> 감성 있는 셀프 사진을 찍어 추억을 남겨보세요.</h2>
 
         <div class="view-more">
           view more
@@ -52,9 +63,8 @@
       </div>
     </div>
 
-
     <!-- event-txt -->
-    <div class="event-txt">
+    <div class="event-txt event">
       <div class="scrollDown-arrow">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
           <path d="M480-160 160-480l42-42 248 248v-526h60v526l248-248 42 42-320 320Z" />
@@ -67,12 +77,14 @@
         </svg>
       </div>
 
-      <h3>인생에 다시 돌아오지 않을 소중한 순간, <br>
-        canon과 함께 추억을 기록하세요</h3>
+      <h3>인생에 다시 돌아오지 않을 소중한 순간,
+        <strong>canon과 함께 추억을 기록하세요</strong>
+      </h3>
+
     </div>
 
     <!-- event-scrollDown -->
-    <div class="event-scrollDown">
+    <div class="event-scrollDown event">
       <div class="canon-self-studio">
         <div class="canon-self-studio-txt">
           <h1>event</h1>
@@ -84,7 +96,7 @@
     </div>
 
     <!-- event-3block -->
-    <div class="event-3block">
+    <div class="event-3block event">
       <h2>캐논 풀 프레임미러리스 카메라 EOS R5와 RF 렌즈를 이용해
         <strong>감성 있는 셀프 사진을 찍어 추억을 남겨보세요</strong>
       </h2>
@@ -93,29 +105,53 @@
         <img src="../images/event-3block2.png" alt="캐논 셀프 스튜디오에서 사진을 찍는 여성2명 2">
         <img src="../images/event-3block3.png" alt="캐논 셀프 스튜디오에서 사진을 찍는 여성2명 3">
       </div>
+      <p>※ 본 이벤트는 캐논 강남점에서만 실행되고 있습니다.</p>
     </div>
 
     <!-- event-youtube -->
-    <div class="event-youtube">
+    <div class="event-youtube event">
       <iframe width="560" height="315" class="youtube"
-        src="https://www.youtube.com/embed/y3XWDfmlCJo?controls=0&loop=1&autoplay=1&mute=1" title="YouTube video player"
-        frameborder="0"
+        src="https://www.youtube.com/embed/y3XWDfmlCJo?controls=0&loop=1&autoplay=1&amp;playlist=y3XWDfmlCJo&amp;loop=0 &mute=1&modestbranding=1"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
       <div class="reservation">
-        예약 바로가기
+        <a href="#">예약 바로가기</a>
       </div>
     </div>
 
     <!-- event-location -->
-    <div class="event-location">
+    <div class="event-location event">
+      <h1>location</h1>
 
+      <div class="event-map">
+        <div id="daumRoughmapContainer1688613354408" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      </div>
+
+      <p>※ 본 이벤트는 캐논 강남점에서만 실행되고 있습니다.</p>
     </div>
+
+    <!-- footer -->
+    <footer class="event-footer event">
+      <div class="footer-text">
+        푸터 내용입니다
+      </div>
+    </footer>
   </div>
 
-  <!-- footer -->
-  <footer></footer>
+
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp": "1688613354408",
+      "key": "2ff8k",
+      "mapWidth": "1200",
+      "mapHeight": "600"
+    }).render();
+  </script>
 </body>
 
 </html>
