@@ -39,16 +39,15 @@ header nav .gnb {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 1;
     transition: 0.3s;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: var(--en-font);
 }
 header nav .gnb li {
     margin: 40px;
+    color: var(--gray-color2);
 }
 header nav .gnb li:first-child {
-    margin-right: 20%;
-}
-header nav .gnb li a {
-    color: #fff;
+    margin-right: 50%;
 }
 header .side-btn {
     width: 80px;
