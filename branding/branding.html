@@ -22,28 +22,38 @@
     <!-- 공통.css -->
     <link rel="stylesheet" href="../common.css">
 
+    <!-- swiper.css -->
+    <link rel="stylesheet" href="../branding/branding-swiper.css">
+
     <!-- 내가 작성한 css -->
     <link rel="stylesheet" href="./branding.css">
 
 
+
     <!-- jQuery -->
     <script src="../common/jquery-3.7.0.min.js"></script>
+
     <!-- 내가 작성한 script -->
     <script defer src="./branding.js"></script>
 </head>
 
 <body>
     <!-- nav -->
-    <nav>
-        <ul class="gnb">
-            <li><a href="#"><img src="../images/logo-small.png" alt="캐논 작은 로고"></a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">BRANDING</a></li>
-            <li><a href="#">BEST MODEL</a></li>
-            <li><a href="#">EVENT</a></li>
-        </ul>
-    </nav>
-    <a href="#" class="bottom-btn">HIRE</a>
+    <header>
+        <div class="nav-logo">
+            <img src="./images/logo-big.png" alt="캐논 큰 사이즈의 로고입니다.">
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#"><img src="../images/logo-small.png" alt="캐논 작은 사이즈의 로고입니다."></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BRANDING</a></li>
+                <li><a href="#">BEST MODEL</a></li>
+                <li><a href="#">EVENT</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="bottom-btn">HIRE</a>
+    </header>
 
     <!-- contents -->
     <div class="contents">
@@ -56,7 +66,7 @@
             </div>
 
             <div class="banner-fixed">
-                <a href="#"><img src="../images/logo-small.png" alt="logo-small"></a>
+                <img src="../images/logo-small.png" alt="logo-small">
             </div>
         </div>
 
@@ -95,7 +105,7 @@
                 </svg>
             </div>
 
-            <h1><img src="../images/logo-small.png" alt="logo-small">
+            <h1><img src="../images/logo-big.png" alt="logo-small">
                 은 사회적 가치를 창출하여<br>
                 <span>고객의 삶에 만족을 제공하고 있습니다.</span>
             </h1>
@@ -112,11 +122,26 @@
             </div>
 
             <div class="news-right">
-                <h3>캐논코리아, 대학생 사진·영상 공모전 ‘2022 미래작가상’ 개최</h3>
-                <img src="../images/new1-color.png" alt="캐논 사진,영상공모전 개최 사진">
-                <p>토탈 이미징 솔루션 기업 캐논코리아 주식회사가 박건희문화재단과 함께 대학생 사진 공모전 ‘2022 미래작가상’을 개최한다......</p>
-                <div class="view-more">
-                    View More
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide1 img1">
+                            <h3>캐논코리아, 대학생 사진·영상 공모전 ‘2022 미래작가상’ 개최</h3>
+                            <p>토탈 이미징 솔루션 기업 캐논코리아 주식회사가 박건희문화재단과 함께 대학생 사진 공모전 ‘2022 미래작가상’을 개최한다......</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide2 img2">
+                        <h3>2022년 장애인고용증진 및 ESG경영실천 공동협약식</h3>
+                        <p>캐논코리아, 장애인의 날 맞아 제14회 ‘장애사원의 날’ 장애인고용증진 협약식.......</p>
+                    </div>
+                    <div class="swiper-slide3 img3">
+                        <h3>캐논코리아 1사 1하천 정화 활동</h3>
+                        <p>통합솔루션 전문기업 캐논코리아 주식회사가 지난 7월, 캐논코리아가 임직원 참여형 CSR 활동을 진행했다.......</p>
+                    </div>
+                    <div class="swiper-pagination mySwiper-pagenation"></div>
+
+                    <div class="view-more">
+                        View More
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +162,7 @@
             <div class="block-2">
                 <img src="../images/branding-3block2-color.png" alt="남자가 캐논 카메라를 들고 있음" class="img2">
                 <div class="block-txt block-2-txt">
-                    <p>친환경 기업</p>
+                    <p>인재 채용</p>
                     <div class="view-more">
                         View More
                     </div>
@@ -147,7 +172,7 @@
             <div class="block-3">
                 <img src="../images/branding-3block3-color.png" alt="위 아래로 손을 마주잡으려 한다" class="img3">
                 <div class="block-txt block-3-txt">
-                    <p>친환경 기업</p>
+                    <p>사회 공헌</p>
                     <div class="view-more">
                         View More
                     </div>
