@@ -41,3 +41,5 @@ $('.bottom-btn').on('click', () => {
     behavior: 'smooth',
   });
 });
+
+// swiper
