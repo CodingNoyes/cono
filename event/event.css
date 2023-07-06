@@ -57,6 +57,12 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--gray-color2);
+  font-size: 2.778rem;
+}
+
+.contents .event-txt h3 span {
+  display: block;
+  font-family: 200;
 }
 
 /** event-scrollDown **/
