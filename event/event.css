@@ -8,17 +8,15 @@ header {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-}
-
-header .nav-logo {
-  width: 80%;
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99999;
 }
-
+header .nav-logo {
+  width: 80%;
+  display: block;
+}
 header nav .gnb {
   display: flex;
   justify-content: space-between;
@@ -30,6 +28,7 @@ header nav .gnb {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 header nav .gnb li {
   margin: 40px;
 }
@@ -77,31 +76,18 @@ header .bottom-btn {
 .event-banner {
   width: 100%;
   height: 100vh;
-  background: url(../images/event-banner.png) no-repeat 50% / cover;
+  background: url(../images/event-banner1.png) no-repeat 50% / cover;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
-.event-banner .banner-txt {
-  width: 80%;
-  margin: 0 auto;
-  color: var(--gray-color2);
-}
-
-.event-banner .banner-txt h1 {
-  font-size: 4rem;
-  color: #fff;
-  font-weight: 500;
-}
-
-.event-banner .banner-txt p {
-  font-family: var(--en-font);
-  font-weight: 200;
-  font-size: 1.25rem;
-}
 .event-banner .view-more {
-  margin: 20px 0;
+  margin: 60px 0;
   cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 13%;
 }
 
 /** event-txt **/
@@ -136,7 +122,6 @@ header .bottom-btn {
   width: 100%;
   background: url(../images/main-background.png) no-repeat 50% / cover;
   position: relative;
-  z-index: 999;
 }
 
 .event-scrollDown .canon-self-studio {
@@ -156,16 +141,18 @@ header .bottom-btn {
 }
 .event-scrollDown .canon-self-studio .canon-self-studio-txt {
   height: 100%;
-  font-family: var(--en-font);
-  font-weight: 200;
   transform: translateY(40%);
+  font-family: var(--en-font);
 }
 .event-scrollDown .canon-self-studio .canon-self-studio-txt h1 {
   font-size: 1.25rem;
+  font-weight: 200;
 }
 
 .event-scrollDown .canon-self-studio .canon-self-studio-txt h2 {
   font-size: 3rem;
+  font-weight: 200;
+  text-transform: capitalize;
 }
 
 .event-scrollDown p {
@@ -186,7 +173,7 @@ header .bottom-btn {
   background-color: var(--black-color);
 }
 .event-3block h2 {
-  padding-top: 80px;
+  padding-top: 100px;
   font-weight: 200;
   color: var(--gray-color2);
   font-size: 1.25rem;
@@ -274,7 +261,7 @@ header .bottom-btn {
   font-family: var(--en-font);
   color: #fff;
   position: relative;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .event-location h1::after {
   content: '';
@@ -287,6 +274,17 @@ header .bottom-btn {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.event-location p {
+  color: var(--gray-color);
+}
+
+.event-location .event-map {
+  width: 1200px;
+  height: 600px;
+  margin: 50px auto;
+  background-color: #fff;
 }
 
 /**** footer ****/
