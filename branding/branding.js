@@ -52,11 +52,6 @@ const mySwiper1 = new Swiper('.mySwiper1', {
         dynamicBullets: true,
     },
 
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
     autoplay: {
         delay: 6000,
     }
