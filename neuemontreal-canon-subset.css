@@ -1,6 +1,10 @@
 /* Regular */
 @font-face {
+<<<<<<< HEAD
   font-family: 'NeueMontreal-Regular';
+=======
+  font-family: 'NeueMontreal';
+>>>>>>> 7d3224091b2c4eb8180e094c0fd47afe0ce1837a
   font-style: normal;
   font-weight: 300;
   font-display: swap;
