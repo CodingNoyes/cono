@@ -6,8 +6,23 @@ body {
 }
 
 /**** nav ****/
-nav .gnb {
-  font-family: var(--en-font);
+header {
+  width: 100%;
+  background-color: #070608;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+header .nav-logo {
+  width: 80%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+header nav .gnb {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,21 +32,24 @@ nav .gnb {
   width: 100%;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transition: 0.3s;
+  font-weight: 400;
+  font-family: var(--en-font);
 }
-nav .gnb li {
-  margin: 30px;
-}
-nav .gnb li:first-child {
-  margin-right: 30%;
-}
-nav .gnb li a {
+header nav .gnb li {
+  margin: 40px;
   color: var(--gray-color2);
+}
+header nav .gnb li:first-child {
+  margin-right: 50%;
 }
 nav li a:hover {
   color: #fff;
 }
 
 .bottom-btn {
+  font-weight: 100;
   width: 120px;
   height: 35px;
   background-color: #d9d9d9;
@@ -40,10 +58,10 @@ nav li a:hover {
   line-height: 35px;
   font-size: 1.1rem;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 2;
 }
-
 /**** contents ****/
 
 /** branding-banner **/
@@ -58,8 +76,8 @@ nav li a:hover {
 }
 
 .branding-banner .banner-txt h1 {
-  font-weight: 100;
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -94,14 +112,15 @@ nav li a:hover {
   text-align: center;
   color: #fff;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 8%;
   padding-bottom: 12%;
 }
 
 .branding-txt .txt-txt {
   color: var(--gray-color2);
   font-weight: 100;
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 1.8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,6 +156,7 @@ nav li a:hover {
 
 .branding-txt .view-more {
   margin: auto;
+  cursor: pointer;
 }
 
 /** branding-scrollDown **/
@@ -168,10 +188,10 @@ nav li a:hover {
 
 .scrollDown-arrow p {
   font-family: var(--en-font);
-  font-weight: 200;
+  font-weight: 400;
   font-size: 22px;
   text-align: center;
-  width: 190px;
+  width: 220px;
   height: 40px;
   line-height: 38px;
   border: 1px solid #fff;
@@ -180,18 +200,20 @@ nav li a:hover {
 
 .branding-scrollDown h1 {
   font-weight: 100;
-  font-size: 40px;
+  font-size: 41px;
   line-height: 42px;
   text-align: center;
   margin-bottom: 13%;
+  line-height: 1.5;
 }
 
 .branding-scrollDown h1 span {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .branding-scrollDown h1 img {
-  width: 180px;
+  width: 190px;
+  margin-right: -15px;
 }
 
 /** branding-news **/
@@ -218,6 +240,9 @@ nav li a:hover {
 }
 .branding-news .news-left h1 {
   font-size: 60px;
+  letter-spacing: -3px;
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
 .branding-news .news-right {
@@ -243,6 +268,18 @@ nav li a:hover {
   color: var(--gray-color2);
   margin-bottom: 25px;
 }
+.branding-news .view-more {
+  cursor: pointer;
+}
+
+/** js **/
+.mySwiper {
+  height: 60vh;
+  overflow: hidden;
+}
+.mySwiper img {
+  display: block;
+}
 
 /** branding-3block **/
 .branding-3block {
@@ -255,6 +292,7 @@ nav li a:hover {
   font-weight: 400;
   font-size: 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .branding-3block .block-1 .img1 {
@@ -316,6 +354,7 @@ nav li a:hover {
   font-family: var(--en-font);
   font-weight: 100;
   font-size: 24px;
+  cursor: pointer;
 }
 
 /**** footer ****/
