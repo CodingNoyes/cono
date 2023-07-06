@@ -1,5 +1,71 @@
 @charset "utf-8";
 
+/**** nav ****/
+header {
+  width: 100%;
+  background-color: #070608;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-logo {
+  width: 80%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+header nav .gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+header nav .gnb li {
+  margin: 40px;
+}
+header nav .gnb li:first-child {
+  margin-right: 30%;
+}
+header nav .gnb li a {
+  color: #d9d9d9;
+}
+header .side-btn {
+  width: 80px;
+  height: 40px;
+  background-color: #fff;
+  color: #070608;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  right: -1%;
+  top: 20%;
+  transform: rotate(270deg);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+header .bottom-btn {
+  width: 120px;
+  height: 35px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 1.1rem;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
 /**** contents ****/
 .contents {
   width: 100%;
@@ -7,6 +73,7 @@
 }
 
 /* event-banner */
+
 .event-banner {
   width: 100%;
   height: 100vh;
@@ -27,9 +94,6 @@
   font-weight: 500;
 }
 
-.event-banner .banner-txt h2 {
-}
-
 .event-banner .banner-txt p {
   font-family: var(--en-font);
   font-weight: 200;
@@ -39,6 +103,7 @@
   margin: 20px 0;
   cursor: pointer;
 }
+
 /** event-txt **/
 .contents .event-txt {
   width: 100%;
@@ -47,20 +112,11 @@
 }
 
 .contents .event-txt .scrollDown-arrow {
-  padding-top: 50px;
-}
-
-.contents .event-txt .scrollDown-arrow.change-color {
-  color: var(--red-color);
+  padding-top: 100px;
 }
 
 .contents .event-txt h3 {
   height: 100vh;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  */
   text-align: center;
   color: var(--gray-color2);
   font-size: 2.778rem;
@@ -80,6 +136,7 @@
   width: 100%;
   background: url(../images/main-background.png) no-repeat 50% / cover;
   position: relative;
+  z-index: 999;
 }
 
 .event-scrollDown .canon-self-studio {
@@ -129,7 +186,7 @@
   background-color: var(--black-color);
 }
 .event-3block h2 {
-  padding-top: 60px;
+  padding-top: 80px;
   font-weight: 200;
   color: var(--gray-color2);
   font-size: 1.25rem;
@@ -142,6 +199,7 @@
   font-size: 1.5rem;
   margin-top: 10px;
 }
+
 .event-3block .event-3block-img {
   width: 90%;
   height: 70%;
@@ -177,7 +235,7 @@
 .event-youtube iframe {
   width: 100%;
   height: 40vw;
-  margin: 40px auto;
+  margin: 60px auto;
   margin-bottom: 0;
   pointer-events: none;
 }
