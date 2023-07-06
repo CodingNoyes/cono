@@ -3,6 +3,7 @@
 /**** contents ****/
 .contents {
   width: 100%;
+  font-family: var(--kr-font);
 }
 
 /* event-banner */
@@ -21,14 +22,22 @@
 }
 
 .event-banner .banner-txt h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
+  font-weight: 500;
 }
 
 .event-banner .banner-txt h2 {
-  width: 30%;
 }
 
+.event-banner .banner-txt p {
+  font-family: var(--en-font);
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+.event-banner .view-more {
+  margin: 20px 0;
+}
 /** event-txt **/
 .contents .event-txt {
   width: 100%;
