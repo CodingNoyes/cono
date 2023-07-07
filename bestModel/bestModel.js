@@ -1,6 +1,6 @@
 /* 마우스 휠 이벤트 */
 
-$('.bestModel').each(function () {
+$('.event').each(function () {
   $(this).on('wheel', function (evt) {
     evt.preventDefault();
 
