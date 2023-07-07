@@ -1,23 +1,16 @@
 @charset "utf-8";
 
-body {
-  margin: 0;
-}
-
 .mySwiper1 {
-  text-indent: -9999px;
-  width: 40vw;
-  height: 60vh;
+  width: 44vw;
+  height: 70vh;
   overflow: hidden;
+  margin-bottom: 40px;
 
   --swiper-theme-color: #fff;
   --swiper-navigation-size: 2rem;
-
-  position: relative;
 }
 .mySwiper1 .swiper-slide {
-  width: 60vw;
-  height: 60vh;
+  height: 50vh;
   background: no-repeat;
   background-size: contain;
 }
@@ -26,6 +19,7 @@ body {
   background-image: url(../images/news1.png);
   filter: saturate(0%);
   cursor: pointer;
+  height: 70vh;
 }
 .mySwiper1 .bg1:hover {
   filter: saturate(100%);
@@ -36,6 +30,7 @@ body {
   background-image: url(../images/news2.png);
   filter: saturate(0%);
   cursor: pointer;
+  height: 70vh;
 }
 .mySwiper1 .bg2:hover {
   filter: saturate(100%);
@@ -46,27 +41,24 @@ body {
   background-image: url(../images/news3.png);
   filter: saturate(0%);
   cursor: pointer;
+  height: 70vh;
 }
 .mySwiper1 .bg3:hover {
   filter: saturate(100%);
   transition: 0.4s;
 }
 
-.mySwiper1 .swiper-pagination-bullet {
-  width: 30px;
+.mySwiper1 .swiper-pagination {
+  width: 40px;
   height: 10px;
-  border-radius: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
+  top: 40px;
 }
-
-.swiper-button-prev::after {
-  position: absolute;
-  left: 50px;
+.mySwiper1 .swiper-pagination-bullet-active-prev,
+.mySwiper1 .swiper-pagination-bullet-active-next {
+  background-color: #ffffff;
 }
-
-.swiper-button-next::after {
+.mySwiper1 .swiper-slide .view-more {
   position: absolute;
-  right: 50px;
+  bottom: 30px;
+  left: 25px;
 }

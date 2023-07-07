@@ -80,13 +80,17 @@ nav li a:hover {
 
 .branding-banner .banner-txt h1 {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 45px;
   color: #fff;
+}
+
+.branding-banner .banner-txt h1:nth-child(1) {
+  margin-top: 20px;
 }
 
 .branding-banner .banner-txt h1:nth-child(2) {
   font-family: var(--en-font);
-  font-weight: 500;
+  font-weight: 100;
 }
 
 .branding-banner img {
@@ -145,16 +149,24 @@ nav li a:hover {
 
 .branding-txt .txt-4circle p {
   font-size: 26px;
-  font-weight: 100;
+  font-weight: 400;
   width: 300px;
   height: 300px;
   padding-top: 130px;
   border: 1px solid #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 .branding-txt .txt-4circle p:last-child {
   padding-top: 110px;
   line-height: 40px;
+}
+
+.branding-txt .txt-4circle p:hover {
+  font-weight: 600;
+  background-color: #fff;
+  color: #cc0000;
+  transition: 0.4s;
 }
 
 .branding-txt .view-more {
@@ -180,7 +192,7 @@ nav li a:hover {
   align-items: center;
   height: 40px;
   color: #fff;
-  margin-top: -16%;
+  margin-top: -13%;
 }
 
 .scrollDown-arrow svg {
@@ -203,11 +215,10 @@ nav li a:hover {
 
 .branding-scrollDown h1 {
   font-weight: 100;
-  font-size: 41px;
+  font-size: 35px;
   line-height: 42px;
   text-align: center;
   line-height: 1.5;
-  margin-top: -3%;
 }
 
 .branding-scrollDown h1 span {
@@ -231,7 +242,6 @@ nav li a:hover {
   justify-content: space-evenly;
   align-items: center;
   margin: auto;
-  gap: 50px;
 }
 .branding-news .news-left {
   height: 70%;
@@ -242,7 +252,7 @@ nav li a:hover {
   font-weight: 400;
 }
 .branding-news .news-left h1 {
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: -3px;
   margin-top: 10px;
   line-height: 1.5;
@@ -250,14 +260,12 @@ nav li a:hover {
 
 .branding-news .news-right {
   /* height: 70%; */
-  margin-top: 50px;
 }
 .branding-news .news-right h3 {
   font-size: 30px;
   margin-bottom: 25px;
 }
 .branding-news .news-right img {
-  width: 1000px;
   height: 550px;
   filter: saturate(0%);
   margin-bottom: 25px;
@@ -287,14 +295,14 @@ nav li a:hover {
 /** branding-3block **/
 .branding-3block {
   color: #fff;
-  padding-top: 8%;
+  padding-top: 3%;
   padding-bottom: 8%;
   display: flex;
 }
 .branding-3block .block-txt p {
   font-weight: 400;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -362,6 +370,8 @@ nav li a:hover {
 
 /**** footer ****/
 footer {
+  height: 100vh;
+  width: 100%;
   background-color: #ddd;
   display: grid;
   background: url(../images/footer-background.png) no-repeat 59% / cover;
@@ -427,7 +437,6 @@ footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
 footer .footer-email-box .footer-email h4 {
-  margin-top: 5px;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -449,5 +458,5 @@ footer .footer-bottom {
   color: var(--gray-color);
   font-family: var(--en-font);
   padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
