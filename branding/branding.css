@@ -1,9 +1,4 @@
 @charset "utf-8";
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--black-color);
   font-family: var(--kr-font);
@@ -18,6 +13,7 @@ header {
   margin: 0;
   padding: 0;
 }
+
 header .nav-logo {
   width: 80%;
   display: block;
@@ -26,6 +22,7 @@ header .nav-logo {
   left: 0;
   display: none;
 }
+
 header nav .gnb {
   display: flex;
   justify-content: space-between;
@@ -40,6 +37,31 @@ header nav .gnb {
   transition: 0.3s;
   font-weight: 400;
   font-family: var(--en-font);
+  z-index: 9999;
+}
+
+header nav .gnb li {
+  margin: 40px;
+  color: var(--gray-color2);
+}
+
+header nav .gnb li:first-child {
+  margin-right: 50%;
+}
+
+header .bottom-btn {
+  width: 120px;
+  height: 35px;
+  background-color: var(--gray-color2);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 1.1rem;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-family: var(--en-font);
+  z-index: 9999;
 }
 header nav .gnb li {
   margin: 40px;
