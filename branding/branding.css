@@ -44,7 +44,7 @@ header nav .gnb li {
 header nav .gnb li:first-child {
   margin-right: 50%;
 }
-nav li:nth-child(3) a{
+nav li:nth-child(3) a {
   color: #fff;
 }
 nav li a:hover {
@@ -221,7 +221,7 @@ nav li a:hover {
 
 /** branding-news **/
 .branding-news {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -364,7 +364,7 @@ nav li a:hover {
 footer {
   background-color: #ddd;
   display: grid;
-  background: url(../images/footer-background.png)no-repeat 59%/cover;
+  background: url(../images/footer-background.png) no-repeat 59% / cover;
 }
 footer .footer-top {
   justify-self: center;
@@ -422,7 +422,8 @@ footer .footer-email-box .footer-email:nth-child(1) h4::after {
   left: 305px;
   bottom: 100px;
 }
-footer .footer-email-box .footer-email:nth-child(1),footer .footer-email-box .footer-email:nth-child(3) {
+footer .footer-email-box .footer-email:nth-child(1),
+footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
 footer .footer-email-box .footer-email h4 {
