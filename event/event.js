@@ -50,7 +50,6 @@ const mySwiper1 = new Swiper('.mySwiper1', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 
   navigation: {
