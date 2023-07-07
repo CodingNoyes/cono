@@ -173,14 +173,8 @@ header .bottom-btn {
 }
 
 /* contents bestModel-new */
-.mySwiper2 {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
 /* contents bestModel-new 1 */
-.contents .bestModel-new1 {
+.bestModel-new1 {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
@@ -189,11 +183,11 @@ header .bottom-btn {
   display: flex;
 }
 
-.contents .bestModel-new1 .scrollDown-arrow {
+.bestModel-new1 .scrollDown-arrow {
   padding-top: 50px;
 }
 
-.contents .bestModel-new1 .bestModel-new1-text {
+.bestModel-new1 .bestModel-new1-text {
   font-family: var(--en-font);
   font-weight: 200;
   color: var(--gray-color2);
@@ -201,29 +195,29 @@ header .bottom-btn {
   font-size: 3.75rem;
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 100px;
   text-align: left;
 }
 
-.contents .bestModel-new1 .bestModel-new1-explain h1 {
+.bestModel-new1 .bestModel-new1-explain h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 1.875rem;
   font-weight: 300;
   position: absolute;
-  top: 180px;
-  left: 830px;
+  top: 200px;
+  left: 930px;
 }
 
-.contents .bestModel-new1 img {
+.bestModel-new1 img {
   width: 650px;
   height: 630px;
   position: absolute;
-  top: 250px;
-  right: 550px;
+  top: 270px;
+  left: 820px;
 }
 
-.contents .bestModel-new1 h2 {
+.bestModel-new1 h2 {
   color: var(--gray-color2);
   text-transform: uppercase;
   font-size: 12.5rem;
@@ -231,28 +225,28 @@ header .bottom-btn {
   font-weight: 700;
   position: absolute;
   top: 220px;
-  left: 550px;
+  left: 650px;
   margin-top: 10%;
 }
 
-.contents .bestModel-new1 .bestModel-new1-model-name {
+.bestModel-new1 .bestModel-new1-model-name {
   font-family: var(--en-font);
   font-weight: 200;
   text-transform: uppercase;
   color: var(--gray-color2);
   position: absolute;
   width: 200px;
-  bottom: 58px;
-  right: 150px;
+  top: 760px;
+  left: 180px;
   line-height: 2.1;
 }
 
-.contents .bestModel-new1 .bestModel-new1-model-name h3 {
+.bestModel-new1 .bestModel-new1-model-name h3 {
   color: var(--gray-color2);
   font-weight: 200;
 }
 
-.contents .bestModel-new1 .bestModel-new1-model-name a {
+.bestModel-new1 .bestModel-new1-model-name a {
   border: 1px solid var(--gray-color2);
   border-radius: 30px;
   padding: 5px 10px;
@@ -260,7 +254,7 @@ header .bottom-btn {
 }
 
 /* contents bestModel-new 2 */
-.contents .bestModel-new2 {
+.bestModel-new2 {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
@@ -269,11 +263,11 @@ header .bottom-btn {
   /* display: none; */
 }
 
-.contents .bestModel-new2 .scrollDown-arrow {
+.bestModel-new2 .scrollDown-arrow {
   padding-top: 50px;
 }
 
-.contents .bestModel-new2 .bestModel-new2-text {
+.bestModel-new2 .bestModel-new2-text {
   font-family: var(--en-font);
   font-weight: 200;
   color: var(--gray-color2);
@@ -285,54 +279,54 @@ header .bottom-btn {
   text-align: left;
 }
 
-.contents .bestModel-new2 .bestModel-new2-explain h1 {
+.bestModel-new2 .bestModel-new2-explain h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 1.875rem;
   font-weight: 300;
   position: absolute;
-  top: 180px;
-  left: 830px;
+  top: 200px;
+  left: 930px;
 }
 
-.contents .bestModel-new2 img {
+.bestModel-new2 img {
   width: 950px;
   height: 950px;
   position: absolute;
-  top: 130px;
-  right: 400px;
+  top: 120px;
+  right: 500px;
 }
 
-.contents .bestModel-new2 h2 {
+.bestModel-new2 h2 {
   color: var(--gray-color2);
   text-transform: uppercase;
   font-size: 12.5rem;
   font-family: var(--en-font);
   font-weight: 700;
   position: absolute;
-  top: 220px;
-  left: 610px;
+  top: 200px;
+  left: 710px;
   margin-top: 10%;
 }
 
-.contents .bestModel-new2 .bestModel-new2-model-name {
+.bestModel-new2 .bestModel-new2-model-name {
   color: var(--gray-color2);
   font-family: var(--en-font);
   font-weight: 200;
   text-transform: uppercase;
   position: absolute;
   width: 200px;
-  bottom: 25px;
-  right: 150px;
+  top: 760px;
+  left: 180px;
   line-height: 2.1;
 }
 
-.contents .bestModel-new2 .bestModel-new2-model-name h3 {
+.bestModel-new2 .bestModel-new2-model-name h3 {
   color: var(--gray-color2);
   font-weight: 200;
 }
 
-.contents .bestModel-new2 .bestModel-new2-model-name a {
+.bestModel-new2 .bestModel-new2-model-name a {
   border: 1px solid var(--gray-color2);
   border-radius: 30px;
   padding: 5px 10px;
@@ -340,7 +334,7 @@ header .bottom-btn {
 }
 
 /* contents bestModel-new 3 */
-.contents .bestModel-new3 {
+.bestModel-new3 {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
@@ -349,11 +343,11 @@ header .bottom-btn {
   /* display: none; */
 }
 
-.contents .bestModel-new3 .scrollDown-arrow {
+.bestModel-new3 .scrollDown-arrow {
   padding-top: 50px;
 }
 
-.contents .bestModel-new3 .bestModel-new3-text {
+.bestModel-new3 .bestModel-new3-text {
   font-family: var(--en-font);
   font-weight: 200;
   color: var(--gray-color2);
@@ -365,25 +359,25 @@ header .bottom-btn {
   text-align: left;
 }
 
-.contents .bestModel-new3 .bestModel-new3-explain h1 {
+.bestModel-new3 .bestModel-new3-explain h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 1.875rem;
   font-weight: 300;
   position: absolute;
-  top: 180px;
-  left: 830px;
+  top: 200px;
+  left: 930px;
 }
 
-.contents .bestModel-new3 img {
+.bestModel-new3 img {
   width: 500px;
   height: 500px;
   position: absolute;
-  top: 230px;
-  right: 710px;
+  top: 250px;
+  left: 800px;
 }
 
-.contents .bestModel-new3 h2 {
+.bestModel-new3 h2 {
   color: var(--gray-color2);
   text-transform: uppercase;
   font-size: 12.5rem;
@@ -391,28 +385,28 @@ header .bottom-btn {
   font-weight: 700;
   position: absolute;
   top: 200px;
-  left: 420px;
+  left: 530px;
   margin-top: 10%;
 }
 
-.contents .bestModel-new3 .bestModel-new3-model-name {
+.bestModel-new3 .bestModel-new3-model-name {
   color: var(--gray-color2);
   font-family: var(--en-font);
   font-weight: 200;
   text-transform: uppercase;
   position: absolute;
   width: 200px;
-  bottom: 95px;
-  right: 150px;
+  top: 760px;
+  left: 180px;
   line-height: 2.1;
 }
 
-.contents .bestModel-new3 .bestModel-new3-model-name h3 {
+.bestModel-new3 .bestModel-new3-model-name h3 {
   color: var(--gray-color2);
   font-weight: 200;
 }
 
-.contents .bestModel-new3 .bestModel-new3-model-name a {
+.bestModel-new3 .bestModel-new3-model-name a {
   border: 1px solid var(--gray-color2);
   border-radius: 30px;
   padding: 5px 10px;
@@ -420,7 +414,7 @@ header .bottom-btn {
 }
 
 /* contents bestModel-new 4 */
-.contents .bestModel-new4 {
+.bestModel-new4 {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
@@ -429,11 +423,11 @@ header .bottom-btn {
   /* display: none; */
 }
 
-.contents .bestModel-new4 .scrollDown-arrow {
+.bestModel-new4 .scrollDown-arrow {
   padding-top: 50px;
 }
 
-.contents .bestModel-new4 .bestModel-new4-text {
+.bestModel-new4 .bestModel-new4-text {
   font-family: var(--en-font);
   font-weight: 200;
   color: var(--gray-color2);
@@ -445,25 +439,25 @@ header .bottom-btn {
   text-align: left;
 }
 
-.contents .bestModel-new4 .bestModel-new4-explain h1 {
+.bestModel-new4 .bestModel-new4-explain h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 1.875rem;
   font-weight: 300;
   position: absolute;
-  top: 180px;
-  left: 825px;
+  top: 200px;
+  left: 930px;
 }
 
-.contents .bestModel-new4 img {
+.bestModel-new4 img {
   width: 600px;
   height: 480px;
   position: absolute;
-  top: 260px;
-  right: 600px;
+  top: 280px;
+  left: 820px;
 }
 
-.contents .bestModel-new4 h2 {
+.bestModel-new4 h2 {
   color: var(--gray-color2);
   text-transform: uppercase;
   font-size: 12.5rem;
@@ -471,28 +465,28 @@ header .bottom-btn {
   font-weight: 700;
   position: absolute;
   top: 200px;
-  left: 610px;
+  left: 700px;
   margin-top: 10%;
 }
 
-.contents .bestModel-new4 .bestModel-new4-model-name {
+.bestModel-new4 .bestModel-new4-model-name {
   color: var(--gray-color2);
   font-family: var(--en-font);
   font-weight: 200;
   text-transform: uppercase;
   position: absolute;
   width: 200px;
-  bottom: 65px;
-  right: 150px;
+  top: 760px;
+  left: 180px;
   line-height: 2.1;
 }
 
-.contents .bestModel-new4 .bestModel-new4-model-name h3 {
+.bestModel-new4 .bestModel-new4-model-name h3 {
   color: var(--gray-color2);
   font-weight: 200;
 }
 
-.contents .bestModel-new4 .bestModel-new4-model-name a {
+.bestModel-new4 .bestModel-new4-model-name a {
   border: 1px solid var(--gray-color2);
   border-radius: 30px;
   padding: 5px 10px;
@@ -500,7 +494,13 @@ header .bottom-btn {
 }
 
 /* contents bestModel-youtube */
-.contents .bestModel-youtube .bestModel-youtube-slide h1 {
+.bestModel-youtube {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color);
+}
+
+.bestModel-youtube .bestModel-youtube-slide h1 {
   font-family: var(--en-font);
   font-weight: 200;
   font-size: 3.75rem;
@@ -511,7 +511,7 @@ header .bottom-btn {
   padding-top: 40px;
 }
 
-.contents .bestModel-youtube .bestModel-youtube-slide h1::after {
+.bestModel-youtube .bestModel-youtube-slide h1::after {
   content: '';
   background-color: var(--gray-color2);
   width: 760px;
@@ -521,15 +521,9 @@ header .bottom-btn {
   margin: 30px auto;
 }
 
-.bestModel-youtube {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--black-color);
-}
-
 .bestModel-youtube iframe {
   width: 100%;
-  height: 38vw;
+  height: 39vw;
   margin: 30px auto;
   margin-bottom: 0;
   pointer-events: none;
@@ -547,10 +541,9 @@ header .bottom-btn {
   text-transform: capitalize;
   font-family: var(--en-font);
   font-size: 3.75rem;
-  font-weight: 400;
+  font-weight: 200;
   position: absolute;
   left: 100px;
-  padding-top: 10px;
 }
 
 .bestModel-category .bestModel-category-item {
@@ -790,13 +783,13 @@ header .bottom-btn {
 }
 
 /* contents bestModel-notice */
-.contents .bestModel-notice {
+.bestModel-notice {
   background-color: #000;
   width: 100%;
   height: 100vh;
 }
 
-.contents .bestModel-notice h1 {
+.bestModel-notice h1 {
   text-transform: capitalize;
   font-family: var(--en-font);
   font-weight: 400;
@@ -807,11 +800,11 @@ header .bottom-btn {
   margin: 0 100px;
 }
 
-.contents .bestModel-notice .bestModel-notice-list {
-  margin-top: 50px;
+.bestModel-notice .bestModel-notice-list {
+  margin: 150px auto;
 }
 
-.contents .bestModel-notice .bestModel-notice-list li {
+.bestModel-notice .bestModel-notice-list li {
   color: var(--gray-color2);
   font-family: var(--kr-font);
   font-size: 1.625rem;
@@ -824,12 +817,12 @@ header .bottom-btn {
   transition: 0.3s;
 }
 
-.contents .bestModel-notice .bestModel-notice-list li:hover {
+.bestModel-notice .bestModel-notice-list li:hover {
   transform: translateX(20px);
   background-color: var(--gray-color);
 }
 
-.contents .bestModel-notice .bestModel-notice-list li:last-child {
+.bestModel-notice .bestModel-notice-list li:last-child {
   border-bottom: 2px solid var(--gray-color2);
 }
 
@@ -839,7 +832,7 @@ header .bottom-btn {
   suffix: '   ';
 }
 
-.contents .bestModel-notice .bestModel-notice-list li .date {
+.bestModel-notice .bestModel-notice-list li .date {
   font-size: 1.25rem;
   margin-top: 12px;
   color: var(--gray-color2);
