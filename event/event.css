@@ -115,12 +115,14 @@ header .bottom-btn {
   font-size: 2.778rem;
   transform: translateY(37%);
   line-height: 2;
+  transition: 0.3s;
 }
 
 .contents .event-txt h3 strong {
   display: block;
   font-weight: 400;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 /** event-scrollDown **/
@@ -288,7 +290,7 @@ header .bottom-btn {
   height: 40px;
   line-height: 40px;
   border-radius: 40px;
-  margin: 30px auto;
+  margin: 20px auto;
 
   font-size: 1.2rem;
   font-weight: 400;
