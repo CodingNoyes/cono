@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.mySwiper1 {
+.mySwiper2 {
   background-color: #c9c9c9;
   height: 100vh;
   overflow: hidden;
@@ -12,23 +12,22 @@ body {
   --swiper-theme-color: #fff;
   --swiper-navigation-size: 2rem;
   position: relative;
-  background-image: url(../../cono/images/main-background.png);
+  background: url(../images/main-background.png) no-repeat 50% / cover;
 }
 
-.mySwiper1 .swiper-slide {
-  background: no-repeat 50% / cover;
+.mySwiper2 .swiper-slide {
   width: 100%;
   user-select: none;
   cursor: -webkit-grab;
 }
 
-.mySwiper1 .swiper-slide h1 {
+.mySwiper2 .swiper-slide h1 {
   color: #fff;
   text-align: center;
   margin-top: 250px;
 }
 
-.mySwiper1 .swiper-slide img {
+.mySwiper2 .swiper-slide img {
   width: 40vw;
   height: 40vw;
   object-fit: contain;
@@ -40,19 +39,7 @@ body {
   margin: auto;
 }
 
-/* .mySwiper1 .bg1 {
-  background-image: url(../../cono/images/main-background.png);
-}
-
-.mySwiper1 .bg2 {
-  background-image: url(../../cono/images/main-background.png);
-}
-
-.mySwiper1 .bg3 {
-  background-image: url(../../cono/images/main-background.png);
-} */
-
-.mySwiper1 .swiper-pagination-bullet {
+.mySwiper2 .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   border-radius: 50%;

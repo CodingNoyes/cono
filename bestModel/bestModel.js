@@ -65,21 +65,20 @@ const mySwiper1 = new Swiper('.mySwiper1', {
 
 // mySwiper2
 
-const mySwiper2 = new Swiper2('.mySwiper2', {
+const mySwiper2 = new Swiper('.mySwiper2', {
   loop: true,
 
   pagination: {
-    el: '.swiper2-pagination',
+    el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
 
   navigation: {
-    nextEl: '.swiper2-button-next',
-    prevEl: '.swiper2-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   autoplay: {
-    delay: 3000,
+    delay: 4000,
   },
 });

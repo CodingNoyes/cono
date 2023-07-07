@@ -1,4 +1,4 @@
-const mySwiper1 = new Swiper('.mySwiper1', {
+const mySwiper2 = new Swiper('.mySwiper2', {
   loop: true,
 
   pagination: {
