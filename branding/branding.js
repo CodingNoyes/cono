@@ -30,6 +30,7 @@ $('.event').each(function () {
 });
 
 /* hire 클릭 시 위로 부드럽게 스크롤 */
+
 $('a[href="#"]').on('click', (evt) => {
   evt.preventDefault();
 });
@@ -49,10 +50,14 @@ const mySwiper1 = new Swiper('.mySwiper1', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   autoplay: {
-    delay: 5000,
+    speed: 4000,
   },
 });
