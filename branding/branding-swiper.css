@@ -3,26 +3,37 @@
 body {
   margin: 0;
 }
+.swiper-container{
+  position: relative;
+}
 .swiper-container {
-  width: 45vw;
-  height: 60vh;
-/*     background: #fd5; */
+  width: 50vw;
+  height: 65vh;
 }
 .swiper-slide img{
-  width: 45vw;
+  width: 60vw;
   height: 60vh;
   object-fit: contain;
+  margin: auto;
 }
 
 .swiper-pagination{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 260px;
+}
+.swiper-pagination-bullet{
+background-color: #ffffff;
+margin-right: 20px;
 }
 
+.mySwiper1 .swiper-pagination-bullet-active-prev,
+.mySwiper1 .swiper-pagination-bullet-active-next {
+  background-color: #ffffff;
+}
 .swiper-container .view-more {
   position: absolute;
-  bottom: 20px;
-  left: 120px;
+  bottom: 60px;
+  left: 260px;
 }
 
