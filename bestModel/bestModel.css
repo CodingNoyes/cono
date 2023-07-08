@@ -140,10 +140,14 @@ position: relative;
 }
 
 .bestModel-new .bestModel-new2-text {
+  text-transform: capitalize;
   color: var(--gray-color2);
   font-size: 3.75rem;
   font-family: var(--en-font);
   font-weight: 200;
+  position: absolute;
+  top: 200px;
+  left: 150px;
 }
 
 /* contents bestModel-youtube */
@@ -447,7 +451,7 @@ position: relative;
 .bestModel-notice h1 {
   text-transform: capitalize;
   font-family: var(--en-font);
-  font-weight: 400;
+  font-weight: 200;
   font-size: 3.75rem;
   color: var(--gray-color2);
   display: block;
@@ -504,6 +508,7 @@ footer {
 }
 footer .footer-top {
   justify-self: center;
+  padding-top: 60px;
 }
 .footer-top img {
   justify-self: center;
