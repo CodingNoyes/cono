@@ -32,10 +32,16 @@ body {
   background-image: url(../images/bestModel-banne3.png);
 }
 
+.swiper-pagination{
+  position: absolute;
+  top: 150px;
+  left: 260px;
+}
 .swiper-pagination-bullet {
-  width: 15px;
+  background-color: #ffffff;
+  /* width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 
 .mySwiper1 .swiper-button-prev::after {
