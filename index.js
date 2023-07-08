@@ -1,14 +1,14 @@
 // 베스트모델 페이지 스크롤 고정
-    const logoSize = gsap.timeline({  
-    scrollTrigger: {
-    trigger: ".main-bestmodel-container",
-    start: "top top",
-    end: "+=4000",
-    scrub: true,
-   pin: true,
-   markers: false,
-   anticipatePin: 1  }
-});
+//    const logoSize = gsap.timeline({  
+//    scrollTrigger: {
+//    trigger: ".main-bestmodel-container",
+//    start: "top top",
+//    end: "+=4000",
+//    scrub: true,
+//    pin: true,
+//    markers: false,
+//    anticipatePin: 1  }
+//});
 
 //  버튼 클릭 시 맨 위로 이동
 $('.bottom-btn').on('click', (evt) => {
@@ -16,7 +16,18 @@ $('.bottom-btn').on('click', (evt) => {
   const home = $('nav').offset().top;
   console.log(home);
   scrollTo({
-    top: home
+    top: home,
+    behavior: 'smooth'
+  });
+});
+//  홈 버튼 클릭 시 맨 위로 이동
+$('ul li').eq(1).on('click', (evt) => {
+  evt.preventDefault();
+  const top = $('nav').offset().top;
+  console.log(top);
+  scrollTo({
+    top: top,
+    behavior: 'smooth'
   });
 });
 // a 기본 이벤트 제거
@@ -50,65 +61,36 @@ $(window).stop().on('scroll',()=>{
 
 //swiper
 const mainSlide = new Swiper('#slide1', {
-  direction: rtl,
   parallax: true,
+  spaceBetween: 10,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets'
   },
   loop: true,
   autoplay: true,
-    delay: 2000,
-    slidesPerView: 2,
-  breakpoints: {  
-    480: { slidesPerView: 2, // 화면에 보여지는 이미지
-      },
-      1200: { 
-        slidesPerView:2,
-        spaceBetween: 20,
-      },
-  }
-});
-const Slide3 = new Swiper('#slide3', {
-  parallax: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets'
-  },
-  loop: true,
-  autoplay: {
-    delay: 2000
-  },  slidesPerView: 2,
-  breakpoints: {  // 480보다 크거나 같으면
-    480: { slidesPerView: 2, // 화면에 보여지는 이미지
-      },
-      1200: { 
-        slidesPerView:2,
-        spaceBetween: 20,
-      },
-  }
-});
-const Slide = new Swiper('#slide2', {
-  parallax: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    speed: 400
-  },  slidesPerView: 1,
-  breakpoints: {  // 480보다 크거나 같으면
-    480: { slidesPerView: 2, // 화면에 보여지는 이미지
-      },
-      1200: { 
-        slidesPerView:3,
-        spaceBetween: 20,
-      },
-  }
-});
+  delay: 4000,
+  slidesPerView: 2,
+  });
+  
+  const mySwiper1 = new Swiper('#swiper2', {
+    direction: 'vertical',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+    },
+  });
+  const mySwiper2 = new Swiper('#swiper3', {
+    parallax: true,
+    loop: true,
+    autoplay: true,
+    delay: 4000,
+    slidesPerView: 2
+  });
 
 //배경과 함께 올라가는 스크롤
 const aboutscroll = gsap.timeline({  
