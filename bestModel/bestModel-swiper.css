@@ -39,9 +39,9 @@ body {
 }
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  /* width: 15px;
+  width: 15px;
   height: 15px;
-  border-radius: 50%; */
+  border-radius: 50%;
 }
 
 .mySwiper1 .swiper-button-prev::after {
@@ -117,6 +117,10 @@ body {
   position: absolute;
   left: 200px;
   top: 550px;
+}
+
+.mySwiper2 .swiper-pagination {
+  margin-bottom: 160px;
 }
 
 .swiper-pagination-bullet {
