@@ -245,7 +245,7 @@ nav li a:hover {
 
 /** branding-news **/
 .branding-news {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -257,7 +257,7 @@ nav li a:hover {
   margin: auto;
 }
 .branding-news .news-left {
-  height: 70%;
+  height: 35%;
 }
 .branding-news .news-left p {
   font-size: 30px;
@@ -269,6 +269,10 @@ nav li a:hover {
   letter-spacing: -3px;
   margin-top: 10px;
   line-height: 1.5;
+}
+
+.branding-news .news-right{
+  margin-top: 50px;
 }
 
 .branding-news .news-right img {
