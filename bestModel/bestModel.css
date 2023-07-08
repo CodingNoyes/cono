@@ -76,52 +76,6 @@ header .bottom-btn {
 }
 
 /**** contents ****/
-/* contents bestModel-banner */
-
-/*
-.contents .bestModel-banner1 {
-  background: url(../images/bestModel-banner1.png) no-repeat 50% / cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.contents .bestModel-banner1 .view-more {
-  position: absolute;
-  top: 580px;
-  left: 200px;
-}
-
-.contents .bestModel-banner2 {
-  background: url(../images/bestModel-banner2.png) no-repeat 50% / cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: none;
-}
-
-.contents .bestModel-banner2 .view-more {
-  position: absolute;
-  top: 580px;
-  left: 200px;
-}
-
-.contents .bestModel-banner3 {
-  background: url(../images/bestModel-banne3.png) no-repeat 50% / cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: none;
-}
-
-.contents .bestModel-banner3 .view-more {
-  position: absolute;
-  top: 580px;
-  left: 200px;
-}
-
-*/
-
 .contents .bestModel-banner .view-more1 {
   text-transform: capitalize;
   font-size: 1.2rem;
@@ -173,6 +127,20 @@ header .bottom-btn {
 }
 
 /* contents bestModel-new */
+.bestModel-new {
+  position: relative;
+}
+
+.bestModel-new .scrollDown-arrow {
+  padding-top: 50px;
+}
+
+.bestModel-new .bestModel-new2-text {
+  color: var(--gray-color2);
+  font-size: 3.75rem;
+  font-family: var(--en-font);
+  font-weight: 200;
+}
 
 /* contents bestModel-youtube */
 .bestModel-youtube {
@@ -524,51 +492,38 @@ header .bottom-btn {
 footer {
   background-color: #ddd;
   display: grid;
-  background: url(../images/footer-background.png) no-repeat 50% / cover;
-  width: 100%;
+  background: url(../images/main-background.png)no-repeat 50%/cover;
   height: 100vh;
 }
-
 footer .footer-top {
   justify-self: center;
 }
-
 .footer-top img {
   justify-self: center;
 }
-
 footer .footer-top ul {
   display: flex;
   justify-content: center;
   color: var(--gray-color);
   font-family: var(--en-font);
 }
-
 footer .footer-top ul li {
   font-size: 1rem;
   color: var(--gray-color);
   border: 2px solid var(--gray-color);
-  border-radius: 20px;
-  width: 150px;
+  border-radius: 30px;
+  width: 130px;
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 5px 20px;  */
+  text-align: center;
+  padding: 5px;
   margin: 20px;
 }
-
-footer .footer-top ul li a {
-  padding: 5px 15px 10px 15px;
-}
-
 footer .footer-top ul li svg {
   fill: var(--gray-color);
   width: 20px;
   padding-top: 7px;
   margin-right: 5px;
 }
-
 footer .footer-email-box {
   display: grid;
   padding-top: 10%;
@@ -577,53 +532,44 @@ footer .footer-email-box {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 footer .footer-email-box .footer-email {
-  border: 2px solid var(--gray-color);
   border-radius: 40px;
   padding: 10px;
   width: 300px;
-  text-indent: 10px;
+  height: 70px;
+  text-indent: 20px;
   background-color: #444545;
   position: relative;
   font-family: var(--en-font);
 }
-
 footer .footer-email-box .footer-email:nth-child(1) h4::after {
   content: '';
   width: 2px;
   background-color: var(--gray-color);
   height: 140px;
   position: absolute;
-  left: 307px;
-  bottom: 160px;
+  left: 310px;
+  bottom: 100px;
 }
-
-footer .footer-email-box .footer-email:nth-child(1),
-footer .footer-email-box .footer-email:nth-child(3) {
+footer .footer-email-box .footer-email:nth-child(1),footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
-
 footer .footer-email-box .footer-email h4 {
   font-size: 1.2rem;
   color: #fff;
 }
-
 footer .footer-email-box .footer-email p {
   font-size: 0.9rem;
   color: var(--gray-color2);
 }
-
 footer .footer-email-box .footer-email h4 .text-small {
   font-size: 0.8rem;
   color: var(--gray-color2);
 }
-
 footer .footer-email-box .footer-email img {
   float: left;
   width: 50px;
 }
-
 footer .footer-bottom {
   display: grid;
   justify-content: center;

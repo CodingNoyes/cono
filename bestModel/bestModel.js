@@ -42,43 +42,36 @@ $('.bottom-btn').on('click', () => {
   });
 });
 
-// swiper
-
-const mySwiper1 = new Swiper('.mySwiper1', {
+// swiper1
+new Swiper('.mySwiper1', {
   loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+	pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
+	navigation : { // 네비게이션 설정
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
 
   autoplay: {
-    delay: 4000,
+  delay: 4000,
   },
 });
 
-// mySwiper2
-
-const mySwiper2 = new Swiper('.mySwiper2', {
+// swiper2
+new Swiper('.mySwiper2', {
   loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+	pagination : { // 페이징 설정
+		el : '.swiper-pagination',
+		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+	},
+	navigation : { // 네비게이션 설정
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
 
   autoplay: {
-    delay: 4000,
+  delay: 4000,
   },
 });

@@ -12,6 +12,6 @@ const mySwiper2 = new Swiper('.mySwiper2', {
   },
 
   autoplay: {
-    delay: 4000,
+    delay: 2000,
   },
 });

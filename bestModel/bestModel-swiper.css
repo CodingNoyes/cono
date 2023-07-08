@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+/* mySwiper1 */
+
 .mySwiper1 {
   background-color: #979797;
   height: 100vh;
@@ -29,23 +31,27 @@ body {
   background-image: url(../images/bestModel-banne3.png);
 }
 
-.mySwiper1 .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   border-radius: 50%;
 }
 
-.swiper-button-prev::after {
+.mySwiper1 .swiper-button-prev::after {
   position: absolute;
   left: 50px;
+  color: #fff;
 }
 
-.swiper-button-next::after {
+.mySwiper1 .swiper-button-next::after {
   position: absolute;
   right: 50px;
+  color: #fff;
 }
 
-/* mtSwiper */
+/* swiper2 */
+
+/* mySwiper2 */
 
 .mySwiper2 {
   background-color: #c9c9c9;
@@ -65,9 +71,10 @@ body {
 }
 
 .mySwiper2 .swiper-slide h1 {
+  font-size: 1.875rem;
   color: #fff;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .mySwiper2 .swiper-slide img {
@@ -76,13 +83,36 @@ body {
   object-fit: contain;
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: 30px;
+  bottom: 150px;
   margin: auto;
 }
 
-.mySwiper2 .swiper-pagination-bullet {
+.mySwiper2 .swiper-slide h3 {
+  font-size: 1.25rem;
+  font-family: var(--en-font);
+  font-weight: 200;
+  color: var(--gray-color2);
+  line-height: 2;
+  position: absolute;
+  left: 205px;
+  top: 510px;
+}
+
+.mySwiper2 .swiper-slide a {
+  font-size: 1.25rem;
+  font-family: var(--en-font);
+  font-weight: 200;
+  color: var(--gray-color2);
+  border: 1px solid var(--gray-color2);
+  border-radius: 30px;
+  padding: 5px 10px;
+  position: absolute;
+  left: 200px;
+  top: 550px;
+}
+
+.swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -91,16 +121,18 @@ body {
 .swiper-button-prev::after {
   position: absolute;
   left: 20vw;
+  color: #fff;
 }
 
 .swiper-button-next::after {
   position: absolute;
   right: 20vw;
+  color: #fff;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
+/* .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets .swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   margin-bottom: 150px;
-}
+} */
