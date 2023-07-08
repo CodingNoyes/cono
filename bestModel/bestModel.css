@@ -201,7 +201,7 @@ position: relative;
   font-weight: 200;
   position: absolute;
   left: 100px;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .bestModel-category .bestModel-category-item {
@@ -212,7 +212,7 @@ position: relative;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 100px;
-  padding-top: 170px;
+  padding-top: 180px;
   gap: 20px;
 }
 
@@ -457,17 +457,18 @@ position: relative;
   display: block;
   width: 200px;
   margin: 0 100px;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .bestModel-notice .bestModel-notice-list {
-  margin: 150px auto;
+  margin: 100px auto;
 }
 
 .bestModel-notice .bestModel-notice-list li {
   color: var(--gray-color2);
   font-family: var(--kr-font);
   font-size: 1.625rem;
+  font-weight: 400;
   border-top: 2px solid var(--gray-color2);
   width: 80%;
   margin: auto;
@@ -500,25 +501,31 @@ position: relative;
 }
 
 /* footer */
+
 footer {
   background-color: #ddd;
   display: grid;
   background: url(../images/main-background.png)no-repeat 50%/cover;
   height: 100vh;
 }
+
 footer .footer-top {
   justify-self: center;
   padding-top: 60px;
 }
+
 .footer-top img {
   justify-self: center;
 }
+
 footer .footer-top ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: var(--gray-color);
   font-family: var(--en-font);
 }
+
 footer .footer-top ul li {
   font-size: 1rem;
   color: var(--gray-color);
@@ -530,12 +537,14 @@ footer .footer-top ul li {
   padding: 5px;
   margin: 20px;
 }
+
 footer .footer-top ul li svg {
   fill: var(--gray-color);
   width: 20px;
   padding-top: 7px;
   margin-right: 5px;
 }
+
 footer .footer-email-box {
   display: grid;
   padding-top: 10%;
@@ -544,6 +553,7 @@ footer .footer-email-box {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
 footer .footer-email-box .footer-email {
   border-radius: 40px;
   padding: 10px;
@@ -554,6 +564,7 @@ footer .footer-email-box .footer-email {
   position: relative;
   font-family: var(--en-font);
 }
+
 footer .footer-email-box .footer-email:nth-child(1) h4::after {
   content: '';
   width: 2px;
@@ -563,25 +574,31 @@ footer .footer-email-box .footer-email:nth-child(1) h4::after {
   left: 310px;
   bottom: 100px;
 }
+
 footer .footer-email-box .footer-email:nth-child(1),footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
+
 footer .footer-email-box .footer-email h4 {
   font-size: 1.2rem;
   color: #fff;
 }
+
 footer .footer-email-box .footer-email p {
   font-size: 0.9rem;
   color: var(--gray-color2);
 }
+
 footer .footer-email-box .footer-email h4 .text-small {
   font-size: 0.8rem;
   color: var(--gray-color2);
 }
+
 footer .footer-email-box .footer-email img {
   float: left;
   width: 50px;
 }
+
 footer .footer-bottom {
   display: grid;
   justify-content: center;
