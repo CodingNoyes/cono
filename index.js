@@ -16,7 +16,18 @@ $('.bottom-btn').on('click', (evt) => {
   const home = $('nav').offset().top;
   console.log(home);
   scrollTo({
-    top: home
+    top: home,
+    behavior: 'smooth'
+  });
+});
+//  홈 버튼 클릭 시 맨 위로 이동
+$('ul li').eq(1).on('click', (evt) => {
+  evt.preventDefault();
+  const top = $('nav').offset().top;
+  console.log(top);
+  scrollTo({
+    top: top,
+    behavior: 'smooth'
   });
 });
 // a 기본 이벤트 제거
@@ -69,17 +80,17 @@ const mainSlide = new Swiper('#slide1', {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
     autoplay: {
       delay: 4000,
     },
   });
-
+  const mySwiper2 = new Swiper('#swiper3', {
+    parallax: true,
+    loop: true,
+    autoplay: true,
+    delay: 4000,
+    slidesPerView: 2
+  });
 
 //배경과 함께 올라가는 스크롤
 const aboutscroll = gsap.timeline({  

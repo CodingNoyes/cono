@@ -365,7 +365,11 @@ header .bottom-btn {
     color: var(--gray-color2);
     font-family: var(--kr-font);
     font-size: 1rem;
-    margin: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.main-branding-txt {
+    width: 1000px;
     margin-bottom: 50px;
 }
 .main-business-branding .main-business-branding-top .main-business-photo .main-business-photo-imgbox {
@@ -380,10 +384,11 @@ header .bottom-btn {
     padding-top: 300px;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-list {
-    width: 60%;
-    height: 50vh;
-    padding-top: 250px;
+    width: 1000px;
+    height: 90vh;
     display: grid;
+    align-content: flex-end;
+    overflow: hidden;
 }
 
 .main-business-branding .main-business-branding-bottom .main-branding-list h3 {
@@ -399,21 +404,27 @@ header .bottom-btn {
     text-align: right;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-list p {
+    
     color: var(--gray-color2);
     font-family: var(--kr-font);
     font-size: 1rem;
     margin: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     text-align: right;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-imgbox {
     display: flex;
-    margin: 20px;
     gap: 2rem;
+}
+.main-business-branding .main-business-branding-bottom .main-branding-imgbox img {
+    width: 100%;
+    object-fit: cover;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-list .view-more {
     margin: 25px 10px;
-    justify-self: right;
+    z-index: 9999;
+    justify-self: center;
+    margin-right: 13%;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-txtbox {
     width: 30%;
@@ -433,7 +444,7 @@ position: relative;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-txtlist h2::before {
     content: '';
-    width: 500px;
+    width: 420px;
     background-color: var(--gray-color);
     height: 2px;
     position: absolute;
@@ -443,9 +454,9 @@ position: relative;
     content: '';
     width: 2px;
     background-color: var(--gray-color);
-    height: 700px;
+    height: 750px;
     position: absolute;
-    left: -100px;
+    left: -75px;
     bottom: -600px;
 }
 .main-business-branding .main-business-branding-bottom .main-branding-txtlist .main-branding-inner-box {
@@ -518,11 +529,19 @@ position: relative;
     font-size: 15rem;
     margin: 0 auto;
     font-family: var(--en-font);
+    font-weight: 200;
 }
-.main-bestmodel .main-bestmodel-container h3 {
+.main-bestmodel .main-bestmodel-container a {
     font-size: 2rem;
     margin: 0 auto;
     font-family: var(--en-font);
+    cursor: pointer;
+    z-index: 9999;
+}
+.main-bestmodel .main-bestmodel-container a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    color:#cc0000;
 }
 .main-bestModel-imgbox {
     position: absolute;
@@ -678,7 +697,7 @@ footer .footer-bottom {
     padding: 5px;
     text-align: center;
     margin: 0 auto;
-    margin-left: -25px;
+    margin-left: -50px;
     border: 2px solid #555555;
     width: 100px;
     cursor: pointer;
