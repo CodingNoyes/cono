@@ -56,6 +56,10 @@ header nav .gnb li {
   color: var(--gray-color2);
 }
 
+header nav li a:hover {
+  color: #fff;
+}
+
 header nav .gnb li:first-child {
   margin-right: 50%;
 }
@@ -128,7 +132,7 @@ header .bottom-btn {
 
 /* contents bestModel-new */
 .bestModel-new {
-  position: relative;
+position: relative;
 }
 
 .bestModel-new .scrollDown-arrow {

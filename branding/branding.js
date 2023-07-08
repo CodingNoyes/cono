@@ -47,7 +47,6 @@ const mySwiper = new Swiper ('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  speed: 300,
  mousewheel: true,
  coverflowEffect: {
   rotate: 30,
@@ -64,6 +63,9 @@ const mySwiper = new Swiper ('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 
+  autoplay: {
+    delay: 3000,
+    },
 })
 
 

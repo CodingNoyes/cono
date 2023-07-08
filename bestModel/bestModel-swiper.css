@@ -17,6 +17,7 @@ body {
 
 .mySwiper1 .swiper-slide {
   background: no-repeat 50% / cover;
+  text-indent: -9999px;
 }
 
 .mySwiper1 .bg1 {
