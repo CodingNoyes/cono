@@ -270,27 +270,16 @@ nav li a:hover {
   margin-top: 10px;
   line-height: 1.5;
 }
-.branding-news .news-right {
-  margin-bottom: 20px;
-}
-.branding-news .news-right h3 {
-  font-size: 30px;
-  margin-bottom: 25px;
-}
+
 .branding-news .news-right img {
-  height: 550px;
   filter: saturate(0%);
-  margin-bottom: 25px;
 }
+
 .branding-news .news-right img:hover {
   filter: saturate(100%);
   transition: 0.4s;
 }
-.branding-news .news-right p {
-  font-size: 16px;
-  color: var(--gray-color2);
-  margin-bottom: 25px;
-}
+
 .branding-news .view-more {
   cursor: pointer;
 }
@@ -375,14 +364,16 @@ nav li a:hover {
 
 /**** footer ****/
 footer {
+  background-color: #ddd;
   display: grid;
-  background: url(../images/footer-background.png) no-repeat 50% / cover;
+  background: url(../images/footer-background.png)no-repeat 59%/cover;
   width: 100%;
   height: 100vh;
 }
 
 footer .footer-top {
   justify-self: center;
+  padding-top: 60px;
 }
 
 .footer-top img {
@@ -400,18 +391,12 @@ footer .footer-top ul li {
   font-size: 1rem;
   color: var(--gray-color);
   border: 2px solid var(--gray-color);
-  border-radius: 20px;
-  width: 150px;
+  border-radius: 30px;
+  width: 130px;
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 5px 20px;  */
+  text-align: center;
+  padding: 5px;
   margin: 20px;
-}
-
-footer .footer-top ul li a {
-  padding: 5px 15px 10px 15px;
 }
 
 footer .footer-top ul li svg {
@@ -431,11 +416,11 @@ footer .footer-email-box {
 }
 
 footer .footer-email-box .footer-email {
-  border: 2px solid var(--gray-color);
   border-radius: 40px;
   padding: 10px;
   width: 300px;
-  text-indent: 10px;
+  height: 70px;
+  text-indent: 20px;
   background-color: #444545;
   position: relative;
   font-family: var(--en-font);
@@ -447,12 +432,10 @@ footer .footer-email-box .footer-email:nth-child(1) h4::after {
   background-color: var(--gray-color);
   height: 140px;
   position: absolute;
-  left: 307px;
-  bottom: 160px;
+  left: 310px;
+  bottom: 120px;
 }
-
-footer .footer-email-box .footer-email:nth-child(1),
-footer .footer-email-box .footer-email:nth-child(3) {
+footer .footer-email-box .footer-email:nth-child(1),footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
 

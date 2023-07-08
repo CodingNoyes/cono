@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>branding</title>
     <!-- open graphy -->
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="../common.css">
 
     <!-- swiper css -->
-    <link rel="stylesheet" href="../common/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
     <!-- 내가 작성한 css -->
     <link rel="stylesheet" href="./branding.css">
@@ -47,11 +48,11 @@
         </div>
         <nav>
             <ul class="gnb">
-                <li><a href="#"><img src="../images/logo-small.png" alt="캐논 작은 사이즈의 로고입니다."></a></li>
-                <li><a href="#">HOME</a></li>
+                <li><img src="../images/logo-small.png" alt="캐논 작은 사이즈의 로고입니다."></a></li>
+                <li><a href="../index.html">HOME</a></li>
                 <li><a href="#">BRANDING</a></li>
-                <li><a href="#">BEST MODEL</a></li>
-                <li><a href="#">EVENT</a></li>
+                <li><a href="../bestModel/bestModel.html">BEST MODEL</a></li>
+                <li><a href="../event/event.html">EVENT</a></li>
             </ul>
         </nav>
         <a href="#" class="bottom-btn">HIRE</a>
@@ -125,29 +126,27 @@
             </div>
 
             <div class="news-right">
-                <div class="swiper mySwiper1">
-
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide bg1">
-                            <div class="view-more">
-                                View More
-                            </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="../images/news1.png" alt="2022 미래작가상" class="img1">
+                            <div class="view-more">View More</div>
                         </div>
-                        <div class="swiper-slide bg2">
-                            <div class="view-more">
-                                View More
-                            </div>
+                        <div class="swiper-slide"><img src="../images/news2.png" alt="2022년 장애인 고용증진 협약식" class="img2">
+                            <div class="view-more">View More</div>
                         </div>
-                        <div class="swiper-slide bg3">
-                            <div class="view-more">
-                                View More
-                            </div>
+                        <div class="swiper-slide"><img src="../images/news3.png" alt="캐논코리아 하청 활동" class="img3">
+                            <div class="view-more">View More</div>
                         </div>
                     </div>
-
+                    <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
 
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
+
             </div>
         </div>
 
