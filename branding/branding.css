@@ -90,6 +90,7 @@ nav li a:hover {
   right: 30px;
   font-family: var(--en-font);
   z-index: 2;
+  cursor: pointer;
 }
 /**** contents ****/
 
