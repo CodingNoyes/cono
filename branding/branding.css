@@ -103,6 +103,7 @@ nav li a:hover {
 .branding-banner .banner-txt {
   padding-top: 20%;
   padding-left: 100px;
+  line-height: 1.4;
 }
 
 .branding-banner .banner-txt h1 {
