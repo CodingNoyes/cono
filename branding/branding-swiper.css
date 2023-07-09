@@ -7,20 +7,21 @@ body {
 position: relative;
 } */
 .swiper-container {
-  width: 50vw;
+  width: 30vw;
   height: 65vh;
+  margin: auto;
 }
 .swiper-slide img{
-  width: 60vw;
+  position: relative;
+  width: 30vw;
   height: 60vh;
   object-fit: contain;
-  margin: auto;
 }
 
 .swiper-pagination{
   position: absolute;
-  top: 30px;
-  left: 26%
+  top: 60px;
+  left: 0px;
 } 
 .swiper-pagination-bullet{
 background-color: #ffffff;
@@ -35,7 +36,7 @@ height: 13px;
 }
 .swiper-container .view-more {
   position: absolute;
-  bottom: 60px;
-  left: 26%
+  bottom: 90px;
+  left: 0;
 }
 
