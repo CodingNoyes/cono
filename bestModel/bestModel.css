@@ -135,7 +135,7 @@ header .bottom-btn {
 }
 
 .contents .bestModel-txt h1::before {
-  content: "누르는 순간 작품이 되다";
+  content: "누르는 순간 작품이 되다.";
   position: absolute;
   top: 0;
   left: 0;
