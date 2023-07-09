@@ -1,15 +1,3 @@
-// 베스트모델 페이지 스크롤 고정
-//    const logoSize = gsap.timeline({  
-//    scrollTrigger: {
-//    trigger: ".main-bestmodel-container",
-//    start: "top top",
-//    end: "+=4000",
-//    scrub: true,
-//    pin: true,
-//    markers: false,
-//    anticipatePin: 1  }
-//});
-
 //  버튼 클릭 시 맨 위로 이동
 $('.bottom-btn').on('click', (evt) => {
   evt.preventDefault();
@@ -35,29 +23,19 @@ $('a[href="#"]').on('click', (evt)=>{
   evt.preventDefault();
 });
 
-// 로고 사이즈 줄이기
+// 로고 사이즈 줄이고 메뉴 보이기
 $(window).stop().on('scroll', () => {
   const logoSize = $('.nav-logo').offset().top;
   console.log(logoSize);
   console.log(scrollY);
-  if(200 < logoSize) {
+  if(100 < logoSize) {
     $('header').addClass('hide');
+    $('nav').addClass('show');
   } else {
     $('header').removeClass('hide');
+    $('nav').removeClass('show');
   }
 });
-
-// 홈 벗어나면 메뉴 보이기
-$(window).stop().on('scroll',()=>{
-  const logo = $('.main-about').offset().top;
-   if ( scrollY > logo) {
-     $('nav').addClass('show');
-     $('header').addClass('change');
-   } else {
-     $('nav').removeClass('show');
-     $('header').removeClass('change');
-   }
- });
 
 //swiper
 const mainSlide = new Swiper('#slide1', {
@@ -72,7 +50,12 @@ const mainSlide = new Swiper('#slide1', {
   delay: 4000,
   slidesPerView: 2,
   });
-  
+  const mySwiper4 = new Swiper('#slide2', {
+    loop: true,
+    autoplay: {
+    delay: 3000,
+    },
+  });
   const mySwiper1 = new Swiper('#swiper2', {
     direction: 'vertical',
     loop: true,
@@ -91,16 +74,20 @@ const mainSlide = new Swiper('#slide1', {
     delay: 4000,
     slidesPerView: 2
   });
-
-//배경과 함께 올라가는 스크롤
-const aboutscroll = gsap.timeline({  
-  scrollTrigger: {
-  trigger: ".main-about",
-  start: "top top",
-  end: "+=500",
-  scrub: true,
-  pin: true,
-  markers: false,
-  anticipatePin: 1
-}
-});
+  const mySwiper3 = new Swiper('#swiper4', {
+    direction: 'vertical',
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+  });
+  //베스트 모델 화면고정
+  const pin = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".main-bestmodel-container",
+      pin: true,
+      scrub: 0.3,
+      start: "top top",
+      end: "+=3000"
+    }
+  });
