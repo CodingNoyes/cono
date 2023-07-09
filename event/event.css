@@ -43,6 +43,11 @@ header nav .gnb li:first-child {
 header nav .gnb li:last-child {
   color: #fff;
 }
+
+header  nav li a:hover {
+  color: #fff;
+}
+
 header .side-btn {
   width: 80px;
   height: 40px;
