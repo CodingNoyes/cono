@@ -148,7 +148,7 @@ position: relative;
   font-weight: 200;
   position: absolute;
   top: 120px;
-  left: 200px;
+  left: 100px;
 }
 
 /* contents bestModel-youtube */
@@ -468,14 +468,14 @@ position: relative;
 .bestModel-notice .bestModel-notice-list li {
   color: var(--gray-color2);
   font-family: var(--kr-font);
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: 400;
   border-top: 2px solid var(--gray-color2);
   width: 80%;
   margin: auto;
   padding: 0 50px 0;
   list-style: hash inside;
-  line-height: 4;
+  line-height: 5;
   transition: 0.3s;
 }
 
@@ -496,7 +496,6 @@ position: relative;
 
 .bestModel-notice .bestModel-notice-list li .date {
   font-size: 1.25rem;
-  margin-top: 12px;
   color: var(--gray-color2);
   float: right;
 }

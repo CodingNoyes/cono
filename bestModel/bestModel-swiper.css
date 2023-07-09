@@ -104,7 +104,8 @@ body {
   line-height: 2;
   position: absolute;
   left: 205px;
-  top: 510px;
+  top: 570px;
+  letter-spacing: 3px;
 }
 
 .mySwiper2 .swiper-slide a {
@@ -117,7 +118,8 @@ body {
   padding: 5px 10px;
   position: absolute;
   left: 200px;
-  top: 550px;
+  top: 615px;
+  letter-spacing: 3px;
 }
 
 .mySwiper2 .swiper-pagination {
