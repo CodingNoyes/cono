@@ -1,4 +1,4 @@
-//  버튼 클릭 시 맨 위로 이동
+// 하단 버튼 클릭 시 맨 위로 이동
 $('.bottom-btn').on('click', (evt) => {
   evt.preventDefault();
   const home = $('nav').offset().top;
@@ -23,7 +23,7 @@ $('a[href="#"]').on('click', (evt)=>{
   evt.preventDefault();
 });
 
-// 로고 사이즈 줄이고 메뉴 보이기
+// 로고 사이즈 줄이고 메뉴 내려오기
 $(window).stop().on('scroll', () => {
   const logoSize = $('.nav-logo').offset().top;
   console.log(logoSize);
@@ -40,7 +40,7 @@ $(window).stop().on('scroll', () => {
 //swiper
 const mainSlide = new Swiper('#slide1', {
   parallax: true,
-  spaceBetween: 10,
+  spaceBetween: 1,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets'
@@ -49,6 +49,7 @@ const mainSlide = new Swiper('#slide1', {
   autoplay: true,
   delay: 4000,
   slidesPerView: 2,
+  centeredSlides : true
   });
   const mySwiper4 = new Swiper('#slide2', {
     loop: true,
@@ -68,17 +69,19 @@ const mainSlide = new Swiper('#slide1', {
     },
   });
   const mySwiper2 = new Swiper('#swiper3', {
+    spaceBetween: 30,
     parallax: true,
     loop: true,
     autoplay: true,
     delay: 4000,
-    slidesPerView: 2
+    slidesPerView: 2,
+    centeredSlides : true
   });
   const mySwiper3 = new Swiper('#swiper4', {
     direction: 'vertical',
     loop: true,
     autoplay: {
-      delay: 2000,
+    delay: 2000,
     },
   });
   //베스트 모델 화면고정
