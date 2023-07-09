@@ -120,7 +120,8 @@ header .bottom-btn {
 .contents .bestModel-txt h1 {
   font-family: var(--kr-font);
   color: var(--gray-color2);
-  font-size: 4.375rem;
+  font-size: 3.4rem;
+  line-height: 2;
   font-weight: 400;
   width: 100%;
   height: 90vh;
@@ -160,22 +161,22 @@ position: relative;
 .bestModel-youtube .bestModel-youtube-slide h1 {
   font-family: var(--en-font);
   font-weight: 200;
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   color: var(--gray-color2);
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .bestModel-youtube .bestModel-youtube-slide h1::after {
   content: '';
-  background-color: var(--gray-color2);
-  width: 760px;
+  background-color: var(--gray-color);
+  width: 700px;
   height: 1px;
 
   display: block;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 
 .bestModel-youtube iframe {
