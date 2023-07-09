@@ -111,6 +111,7 @@ header .bottom-btn {
   background: url(../images/main-background.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .contents .bestModel-txt .scrollDown-arrow {
@@ -121,14 +122,41 @@ header .bottom-btn {
   font-family: var(--kr-font);
   color: var(--gray-color2);
   font-size: 3.4rem;
+  white-space: nowrap;
   line-height: 2;
   font-weight: 400;
+  letter-spacing: 30px;
+  color: transparent; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.contents .bestModel-txt h1::before {
+  content: "누르는 순간 작품이 되다";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 90vh;
-  letter-spacing: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  color: var(--gray-color2);
+  overflow: hidden;
+  border-right: 1px solid var(--gray-color2);
+  animation: typing 5s steps(40) infinite;
+}
+
+@keyframes typing{
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
 }
 
 /* contents bestModel-new */
