@@ -224,7 +224,6 @@ header .bottom-btn {
   width: 112%;
   overflow: hidden;
   font-size: 10rem;
-  text-shadow: -5px 0 #444545, 0 5px #444545, 5px 0px #444545, 0px -5px #444545;
   font-family: var(--en-font);
   color: inherit;
   /* text-shadow:-1px 0px var(--gray-color), 
