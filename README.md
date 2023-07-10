@@ -14,6 +14,6 @@
 
 # <h2>2023-07-09 :<h3>회의 및 디테일한 부분 수정</h3></h2>
 
-# 👉🏻<a href= "./cono-publishing-guide.pdf" target="_blank">퍼블리싱 가이드 바로가기</a>👈🏻
-
 # <h3>Coding Noye member : 문예림 / 이수빈 / 임주희 / 이종화</h3>
+
+# 👉🏻<a href= "./cono-publishing-guide.pdf" target="_blank">퍼블리싱 가이드 바로가기</a>👈🏻
