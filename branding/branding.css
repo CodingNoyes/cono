@@ -323,29 +323,6 @@ nav li a:hover {
   margin-bottom: 10px;
   text-align: center;
 }
-
-/* .branding-3block .block-1 .img1 {
-  filter: saturate(0%);
-}
-.branding-3block .block-1:hover .img1 {
-  filter: saturate(100%);
-  transition: 0.8s;
-}
-.branding-3block .block-2 .img2 {
-  filter: saturate(0%);
-}
-.branding-3block .block-2:hover .img2 {
-  filter: saturate(100%);
-  transition: 0.8s;
-}
-.branding-3block .block-3 .img3 {
-  filter: saturate(0%);
-}
-.branding-3block .block-3:hover .img3 {
-  filter: saturate(100%);
-  transition: 0.8s;
-} */
-
 .branding-3block .img-3block {
   filter: saturate(0%);
   transition: 0.5s;
@@ -363,8 +340,6 @@ nav li a:hover {
 .branding-3block .img-3block img:hover {
   transform: scale(1.05);
 }
-
-/* 임주희:transition값이 호버시에만 들어가있어서 동작이 어색해 수정했습니다. */
 
 .branding-3block .block-1 {
   position: relative;
