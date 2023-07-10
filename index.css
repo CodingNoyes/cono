@@ -227,7 +227,7 @@ header .bottom-btn {
     font-family: var(--en-font);
     color: inherit;
     position: relative;
-    bottom: -120px;
+    bottom: -90px;
     transform: scale(1.4);
 }
 .main-about .main-scrolldown-title .flow-text {
@@ -242,6 +242,7 @@ header .bottom-btn {
 .main-about .main-scrolldown-title .flow-text h1 {
     font-size: 10rem;
     margin-left: 1750px;
+    z-index: 9999;
 }
 @keyframes ani-1 {
     0% {
