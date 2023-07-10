@@ -32,10 +32,11 @@ body {
   background-image: url(../images/bestModel-banner3.png);
 }
 
-.swiper-pagination{
+.swiper-pagination {
   position: absolute;
   top: 150px;
   left: 260px;
+  margin-bottom: 30px;
 }
 
 .swiper-pagination-bullet {
