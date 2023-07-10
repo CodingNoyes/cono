@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +43,7 @@ header.resize .nav-logo {
 }
 nav.show .gnb {
   top: 1px;
+  top: 0;
 }
 header nav .gnb {
   display: flex;
@@ -52,6 +54,7 @@ header nav .gnb {
   font-size: 1.1rem;
   width: 100%;
   height: 50px;
+  height: 48px;
   background-color: rgba(0, 0, 0, 0.7);
   transition: 0.5s;
   font-weight: 400;
@@ -83,6 +86,7 @@ header .side-btn {
   position: fixed;
   right: -1%;
   top: 20%;
+  top: 50%;
   transform: rotate(270deg);
   font-size: 1.1rem;
   font-weight: bold;
@@ -223,11 +227,21 @@ header .bottom-btn {
   text-shadow: -5px 0 #444545, 0 5px #444545, 5px 0px #444545, 0px -5px #444545;
   font-family: var(--en-font);
   color: inherit;
+  /* text-shadow:-1px 0px var(--gray-color), 
+                0px 1px var(--gray-color), 
+                1px 0px var(--gray-color), 
+                0px -1px var(--gray-color);  */
+  font-family: var(--en-font);
+  color: var(--gray-color);
+  position: relative;
+  bottom: -90px;
+  transform: scale(1.4);
 }
 .main-about .main-scrolldown-title .flow-text {
   width: 400%;
   display: flex;
   animation: ani-1 15s infinite linear;
+  animation: ani-1 20s infinite linear;
 }
 .ani-left,
 .ani-right {
@@ -237,6 +251,7 @@ header .bottom-btn {
 .main-about .main-scrolldown-title .flow-text h1 {
   font-size: 10rem;
   margin-left: 1750px;
+  z-index: 9999;
 }
 @keyframes ani-1 {
   0% {
