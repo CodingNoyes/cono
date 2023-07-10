@@ -62,5 +62,4 @@ body::-webkit-scrollbar {
 
 .view-more:hover {
   color: var(--red-color);
-  transform: scale(1.1);
 }
