@@ -69,6 +69,9 @@ header nav .gnb li:first-child {
     margin-right: 50%;
     text-indent: -9999px;
 }
+header nav .gnb li:nth-child(2) {
+    color: #fff;
+}
 header .side-btn {
     display: grid;
     align-items: center;
@@ -720,7 +723,7 @@ footer {
     display: grid;
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 12.5%;
     z-index: 9999;
     color: #555555;
     border-radius: 20px;

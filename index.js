@@ -91,6 +91,6 @@ const mainSlide = new Swiper('#slide1', {
       pin: true,
       scrub: 0.3,
       start: "top top",
-      end: "+=3000"
+      end: "+=500"
     }
   });
