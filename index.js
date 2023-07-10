@@ -65,7 +65,7 @@ const mainSlide = new Swiper('#slide1', {
       clickable: true,
     },
     autoplay: {
-      delay: 4000,
+      delay: 5000,
     },
   });
   const mySwiper2 = new Swiper('#swiper3', {
@@ -81,7 +81,7 @@ const mainSlide = new Swiper('#slide1', {
     direction: 'vertical',
     loop: true,
     autoplay: {
-    delay: 2000,
+    delay: 4000,
     },
   });
   //베스트 모델 화면고정

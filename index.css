@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -26,6 +24,10 @@ header.change .nav-logo {
 }
 header.hide .nav-logo {
   width: 10%;
+  margin-left: 2%;
+}
+header.hide .nav-logo img {
+  width: 85.5%;
   margin-left: 1%;
 }
 header .nav-logo {
@@ -38,11 +40,10 @@ header .nav-logo {
   z-index: 9999;
 }
 header.resize .nav-logo {
-  width: 9.5%;
+  width: 10%;
   z-index: 9999;
 }
 nav.show .gnb {
-  top: 1px;
   top: 0;
 }
 header nav .gnb {
@@ -54,7 +55,6 @@ header nav .gnb {
   font-size: 1.1rem;
   width: 100%;
   height: 50px;
-  height: 48px;
   background-color: rgba(0, 0, 0, 0.7);
   transition: 0.5s;
   font-weight: 400;
@@ -69,7 +69,7 @@ header nav .gnb li:hover {
   color: #fff;
 }
 header nav .gnb li:first-child {
-  margin-right: 50%;
+  margin-right: 58.5%;
   text-indent: -9999px;
 }
 header nav .gnb li:nth-child(2) {
@@ -85,7 +85,6 @@ header .side-btn {
   text-align: center;
   position: fixed;
   right: -1%;
-  top: 20%;
   top: 50%;
   transform: rotate(270deg);
   font-size: 1.1rem;
@@ -154,6 +153,12 @@ header .bottom-btn {
   margin-top: 10px;
   text-align: center;
   padding: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main-home .main-home-right-box .radius-area-txt:hover {
+  color: #fff;
+  border: 2px solid #fff;
 }
 /* main-about */
 .main-about {
@@ -201,15 +206,11 @@ header .bottom-btn {
   line-height: 2;
   font-family: var(--kr-font);
 }
-.main-about .main-aboutus {
-  background-color: #fff;
-  width: 200px;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 100px auto;
-  font-family: var(--en-font);
+.main-about .view-more {
+  margin: 0 auto;
+  cursor: pointer;
 }
-.main-about .main-aboutus h4 {
+.main-about .main-aboutus a {
   text-align: center;
   font-size: 1rem;
   color: #070608;
@@ -223,13 +224,6 @@ header .bottom-btn {
 .main-about .main-scrolldown-title {
   width: 112%;
   overflow: hidden;
-  font-size: 10rem;
-  font-family: var(--en-font);
-  color: inherit;
-  /* text-shadow:-1px 0px var(--gray-color), 
-                0px 1px var(--gray-color), 
-                1px 0px var(--gray-color), 
-                0px -1px var(--gray-color);  */
   font-family: var(--en-font);
   color: var(--gray-color);
   position: relative;
@@ -239,7 +233,6 @@ header .bottom-btn {
 .main-about .main-scrolldown-title .flow-text {
   width: 400%;
   display: flex;
-  animation: ani-1 15s infinite linear;
   animation: ani-1 20s infinite linear;
 }
 .ani-left,
@@ -608,7 +601,6 @@ header .bottom-btn {
   z-index: 9999;
 }
 .main-bestmodel .main-bestmodel-container a:hover {
-  transform: scale(1.1);
   transition: 0.3s;
   color: #cc0000;
 }
@@ -693,8 +685,16 @@ footer .footer-top .footer-sns .sns {
   padding: 5px;
   padding-bottom: 10px;
   margin: 20px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
+footer .footer-top .footer-sns .sns:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+footer .footer-top .footer-sns .sns:hover svg {
+  fill: #fff;
+}
 footer .footer-top .footer-sns .sns svg {
   fill: var(--gray-color);
   width: 20px;
@@ -786,6 +786,11 @@ footer .footer-bottom {
   border: 2px solid #555555;
   width: 100px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.view-btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
 }
 #slide1 .swiper-pagination {
   position: absolute;
@@ -843,6 +848,6 @@ footer .footer-bottom {
   text-align: center;
   margin: 0;
   position: absolute;
-  top: 125px;
+  top: 150px;
   left: 250px;
 }
