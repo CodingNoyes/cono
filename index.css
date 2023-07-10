@@ -220,15 +220,20 @@ header .bottom-btn {
 .main-about .main-scrolldown-title {
     width: 112%;
     overflow: hidden;
-    font-size: 10rem;
-    text-shadow: -5px 0 #444545,0 5px #444545,5px 0px #444545,0px -5px #444545; 
+    text-shadow:-1px 0px var(--gray-color), 
+                0px 1px var(--gray-color), 
+                1px 0px var(--gray-color), 
+                0px -1px var(--gray-color); 
     font-family: var(--en-font);
     color: inherit;
+    position: relative;
+    bottom: -120px;
+    transform: scale(1.4);
 }
 .main-about .main-scrolldown-title .flow-text {
     width: 400%;
     display: flex;
-    animation: ani-1 15s infinite linear;
+    animation: ani-1 20s infinite linear;
 }
 .ani-left,.ani-right {
     width: 200%;
