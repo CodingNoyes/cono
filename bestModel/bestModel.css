@@ -64,7 +64,7 @@ header nav .gnb li:nth-child(4) {
   color: #fff;
 }
 
-header  nav li a:hover {
+header nav li a:hover {
   color: #fff;
 }
 
@@ -143,16 +143,15 @@ header .bottom-btn {
   line-height: 2;
   font-weight: 400;
   letter-spacing: 30px;
-  color: transparent; 
+  color: transparent;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
 }
 
 .contents .bestModel-txt h1::before {
-  content: "누르는 순간 작품이 되다.";
+  content: '누르는 순간 작품이 되다.';
   position: absolute;
   top: 0;
   left: 0;
@@ -161,10 +160,10 @@ header .bottom-btn {
   color: var(--gray-color2);
   overflow: hidden;
   border-right: 1px solid var(--gray-color2);
-  animation: typing 5s steps(40) infinite;
+  animation: typing 6s steps(40) infinite;
 }
 
-@keyframes typing{
+@keyframes typing {
   0% {
     width: 0%;
   }
@@ -178,7 +177,7 @@ header .bottom-btn {
 
 /* contents bestModel-new */
 .bestModel-new {
-position: relative;
+  position: relative;
 }
 
 .bestModel-new .scrollDown-arrow {
@@ -550,7 +549,7 @@ position: relative;
 footer {
   background-color: #ddd;
   display: grid;
-  background: url(../images/footer-background.png)no-repeat 59%/cover;
+  background: url(../images/footer-background.png) no-repeat 59% / cover;
   height: 100vh;
   width: 100%;
 }
@@ -616,7 +615,8 @@ footer .footer-email-box .footer-email:nth-child(1) h4::after {
   left: 310px;
   bottom: 120px;
 }
-footer .footer-email-box .footer-email:nth-child(1),footer .footer-email-box .footer-email:nth-child(3) {
+footer .footer-email-box .footer-email:nth-child(1),
+footer .footer-email-box .footer-email:nth-child(3) {
   justify-self: right;
 }
 footer .footer-email-box .footer-email h4 {
