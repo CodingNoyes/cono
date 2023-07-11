@@ -227,7 +227,7 @@ header .bottom-btn {
   font-family: var(--en-font);
   color: var(--gray-color);
   position: relative;
-  bottom: -90px;
+  bottom: -232px;
   transform: scale(1.4);
 }
 .main-about .main-scrolldown-title .flow-text {
