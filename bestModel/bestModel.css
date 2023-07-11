@@ -137,11 +137,9 @@ header .bottom-btn {
 
 .contents .bestModel-txt h1 {
   font-family: var(--kr-font);
-  color: var(--gray-color2);
   font-size: 3.4rem;
-  white-space: nowrap;
-  line-height: 2;
   font-weight: 400;
+  white-space: nowrap;
   letter-spacing: 30px;
   color: transparent;
   position: absolute;
